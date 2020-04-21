@@ -79,7 +79,12 @@ Attribute&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 image | Name of image (in the asset manager). | string | (*none*)
 preserveAspect | Should the aspect ratio of this image be preserved? | [<span class="tag boo"></span>](attributes#attribute-types) | *(varies)*
 color | Color for this element's image	 | [<span class="tag xmlco"></span>](attributes#attribute-types) | `clear` or `#FFFFFF`
-type | Image Type | Simple, Sliced, Filled, Tiled | *(varies)*
+type | How to display the image. | <ul><li>Simple</li><li>Sliced</li><li>Tiled</li><li>Filled</li></ul> | *(varies)*
+fillCenter | When `type="Sliced"`: whether to draw the center of the image. | [<span class="tag boo"></span>](attributes#attribute-types) | `true`
+fillMethod | When `type="Filled"`: how to fill the image. | <ul><li>Horizontal</li><li>Vertical</li><li>Radial90</li><li>Radial180</li><li>Radial360</li></ul> | `Radial360`
+fillOrigin | When `type="Filled"`: where to start filling from. `0` is the lower-leftmost corner/edge, and each successive number is the next corner/edge going around clockwise. | <ul><li>0</li><li>1</li><li>2</li><li>3</li></ul> | `0`
+fillAmount | When `type="Filled"`: how much of the picture is filled in, with `0` being none at all, and `1`  being all of it.| float | `1`
+fillClockwise | When `type="Filled"`: whether to fill radially clockwise as opposed to counterclockwise. | [<span class="tag boo"></span>](attributes#attribute-types) | `true`
 raycastTarget | If the element blocks clicks. | [<span class="tag boo"></span>](attributes#attribute-types) | `true`
 
 
