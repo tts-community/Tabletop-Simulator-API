@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/Icon-Dice.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
     
     
       
@@ -108,7 +108,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../#member-variable-summary" tabindex="1" class="md-skip">
+      <a href="#member-variable-summary" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -4254,7 +4254,17 @@
 <h3 id="ui-function-details">UI Function Details<a class="headerlink" href="#ui-function-details" title="Permanent link"> </a></h3>
 <h4 id="createbutton">createButton(...)<a class="headerlink" href="#createbutton" title="Permanent link"> </a></h4>
 <p><a href="/types"><span class="ret boo"></span></a>&nbsp;Creates a scripted button attached to the Object. Scripted buttons are buttons that can be clicked while in-game that trigger a function in a script.</p>
-<details class="tip"><summary>Button Tips</summary><ul><li>Buttons can not be clicked from their back side.</li><li>Buttons can not be clicked if there is another object between the pointer and the button. This does not include the Object the button is attached to.</li><li>Buttons are placed relative to the Object they are attached to.</li><li>The maximum font size is capped at 1000.</li><li>The minimum width/height is 60. Any lower number (besides 0) will appear to be 60. This prevents visual glitches involving the corner rounding.</li><li>A button width/height of 0 will cause the button not to be drawn, but its label will be. This can be a way to attach text to an Object.</li><li>You cannot assign an index to a button. It is given one automatically.</li></ul></details><div class="admonition info">
+<details class="tip"><summary>Button Tips</summary><ul>
+<li>Buttons can not be clicked from their back side.</li>
+<li>Buttons can not be clicked if there is another object between the pointer and the button. This does not include the Object the button is attached to.</li>
+<li>Buttons are placed relative to the Object they are attached to.</li>
+<li>The maximum font size is capped at 1000.</li>
+<li>The minimum width/height is 60. Any lower number (besides 0) will appear to be 60. This prevents visual glitches involving the corner rounding.</li>
+<li>A button width/height of 0 will cause the button not to be drawn, but its label will be. This can be a way to attach text to an Object.</li>
+<li>You cannot assign an index to a button. It is given one automatically.</li>
+</ul>
+</details>
+<div class="admonition info">
 <p class="admonition-title">createButton(parameters)</p>
 <ul>
 <li><a href="/types"><span class="tag tab"></span></a> <strong>parameters</strong>: A Table containing the information used to spawn the button.<ul>
@@ -4355,7 +4365,17 @@
 <hr />
 <h4 id="createinput">createInput(...)<a class="headerlink" href="#createinput" title="Permanent link"> </a></h4>
 <p><a href="/types"><span class="ret boo"></span></a>&nbsp;Creates a scripted input attached to the Object. Scripted inputs are boxes you can click inside of in-game to input/edit text. Every letter typed triggers the function. The bool that is returned as part of the input_function allows you to determine when a player has finished editing the input.</p>
-<details class="tip"><summary>Input Tips</summary><ul><li>Inputs can not be clicked from their back side.</li><li>Inputs can not be clicked if there is another object between the pointer and the inputs. This does not include the Object the input is attached to.</li><li>Inputs are placed relative to the Object they are attached to.</li><li>The maximum font size is capped at 1000.</li><li>The minimum width/height is 60. Any lower number (besides 0) will appear to be 60. This prevents visual glitches involving the corner rounding.</li><li>Font that does not fit in the input window's width/height does NOT display. To know how much height you need for each line, the formula is <code class="codehilite">(font_size * # of lines) + 23</code>. In other words, multiply how many lines of text you want to display by your font_size and add 23. That is your height value.</li><li>You cannot assign an index to an input. It is given one automatically.</li></ul></details><div class="admonition info">
+<details class="tip"><summary>Input Tips</summary><ul>
+<li>Inputs can not be clicked from their back side.</li>
+<li>Inputs can not be clicked if there is another object between the pointer and the inputs. This does not include the Object the input is attached to.</li>
+<li>Inputs are placed relative to the Object they are attached to.</li>
+<li>The maximum font size is capped at 1000.</li>
+<li>The minimum width/height is 60. Any lower number (besides 0) will appear to be 60. This prevents visual glitches involving the corner rounding.</li>
+<li>Font that does not fit in the input window's width/height does NOT display. To know how much height you need for each line, the formula is <code class="codehilite">(font_size * # of lines) + 23</code>. In other words, multiply how many lines of text you want to display by your font_size and add 23. That is your height value.</li>
+<li>You cannot assign an index to an input. It is given one automatically.</li>
+</ul>
+</details>
+<div class="admonition info">
 <p class="admonition-title">createInput(parameters)</p>
 <ul>
 <li><a href="/types"><span class="tag tab"></span></a> <strong>parameters</strong>: A Table containing the information used to spawn the input.<ul>
@@ -5179,7 +5199,11 @@
 <span class="kr">end</span>
 </pre></div>
 
-<details class="tip"><summary>Tip for using GUID to pull Object</summary><p>When getting the GUIDs of objects in a container, it is possible items can have the same GUID while in a container. This is because only once two items try to exist at the same time is one of them given a new GUID, and Objects in a container do not currently exist. Removing all Objects from the container at once will force all of them to be given unique GUIDs.</p></details><details class="tip"><summary>Tip for using index to pull Object</summary><p>When you take an Object from the container, all higher indexes are reduced by 1 instantly. If you pull more than once Object at once by their index, you must account for this index changing.</p></details><hr />
+<details class="tip"><summary>Tip for using GUID to pull Object</summary><p>When getting the GUIDs of objects in a container, it is possible items can have the same GUID while in a container. This is because only once two items try to exist at the same time is one of them given a new GUID, and Objects in a container do not currently exist. Removing all Objects from the container at once will force all of them to be given unique GUIDs.</p>
+</details>
+<details class="tip"><summary>Tip for using index to pull Object</summary><p>When you take an Object from the container, all higher indexes are reduced by 1 instantly. If you pull more than once Object at once by their index, you must account for this index changing.</p>
+</details>
+<hr />
 <h3 id="hide-function-details">Hide Function Details<a class="headerlink" href="#hide-function-details" title="Permanent link"> </a></h3>
 <h4 id="sethiddenfrom">setHiddenFrom(...)<a class="headerlink" href="#sethiddenfrom" title="Permanent link"> </a></h4>
 <p><a href="/types"><span class="ret boo"></span></a>&nbsp;Hides the Object from the specified players, as if it were in a hand zone.</p>
@@ -5656,7 +5680,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../assets/javascripts/application.5e60981f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       

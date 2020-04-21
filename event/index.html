@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/Icon-Dice.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
     
     
       
@@ -108,7 +108,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../#function-summary" tabindex="1" class="md-skip">
+      <a href="#function-summary" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -2621,6 +2621,11 @@
 </thead>
 <tbody>
 <tr>
+<td>filterObjectEnterContainer(<a href="/types"><span class="tag obj"></span></a>&nbsp;container, <a href="/types"><span class="tag obj"></span></a>&nbsp;enter_object)</td>
+<td>Called when an object attempts to enter any container. The object is prevented from entering unless "true" is returned.</td>
+<td><a href="#filterobjectentercontainer"><span class="i"></span></a></td>
+</tr>
+<tr>
 <td>onChat(<a href="/types"><span class="tag str"></span></a>&nbsp;message, <a href="/types"><span class="tag pla"></span></a>&nbsp;sender)</td>
 <td>Called when a chat message is sent in game chat.</td>
 <td><a href="#onchat"><span class="i"></span></a></td>
@@ -2898,7 +2903,9 @@
     <span class="kr">end</span>
 <span class="kr">end</span>
 </pre></div>
-</details><hr />
+
+</details>
+<hr />
 <h3 id="onobjectdestroy">onObjectDestroy(...)<a class="headerlink" href="#onobjectdestroy" title="Permanent link"> </a></h3>
 <p>Called whenever any object is destroyed. The dying Object has 1 frame left to live. This event fires immediately before the dying Object’s <code class="codehilite">onDestroy()</code> but their lifetime is the same final frame.</p>
 <div class="admonition info">
@@ -3472,7 +3479,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../assets/javascripts/application.5e60981f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
