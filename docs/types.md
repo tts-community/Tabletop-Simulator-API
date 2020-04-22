@@ -129,7 +129,7 @@ World | The center of the instance is `{x=0, y=0, z=0}`. That is usually near th
 Local | The center of the Object's model is `{x=0, y=0, z=0}`. The center of an Object is determined by the model's creator.
 
 ???tip "Conversion Between World/Local"
-     [positionToWorld(...)](object#positiontoworld) and [positionToLocal(...)](object#positiontolocal) can be used to convert between the two types.
+     [positionToWorld(...)](../object#positiontoworld) and [positionToLocal(...)](../object#positiontolocal) can be used to convert between the two types.
 
 #####Rotation
 
