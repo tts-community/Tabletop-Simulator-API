@@ -2,7 +2,7 @@
 
 Welcome to **Lua Scripting** in Tabletop Simulator! Scripting is an advanced feature and it’s expected you already know something about it. However, for complete novices, check out this [beginners scripting guide to Lua](http://steamcommunity.com/sharedfiles/filedetails/?id=714904631) created by MrStump, to help you along the way.
 
-![Demonstration Of Game](/img/intro.gif)
+![Demonstration Of Game](img/intro.gif)
 
 A game is composed of one Global Script and zero to many Object Scripts. The Global Script is a script that lives in your game that can run background tasks and do general game management type functions. Object scripts are attached to an individual object. Objects are anything with a physical model in the game - chess piece, dice, decks, cards, bags, custom models, boards, etc. Both types of scripts can call the same functions, but Object scripts have access to a reference of the Object it is attached to with the `self` keyword.
 
