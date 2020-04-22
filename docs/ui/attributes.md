@@ -32,12 +32,8 @@ Attribute&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 active | Specifies whether or not this element is active. This can be used to hide/show elements via scripting. Triggering this via script will not trigger animations. | bool | `true`
 class | This allows you to group elements together by giving them the same class. It is used with [Defaults](defaults). | string | (none)
 id | Used by Lua scripting to identify an element within the XML. | string | (none)
-name | Specifies the name of this game object in the Unity hierarchy. (See [Component](../../component)) | string | (varies)
 isDropReceiver | Determine if an object triggers onElementDropped. | bool | false
 visibility | What colors are able to see the element. See below for additional details. | string | (visible to all)
-hoverClass | Class or classes to be applied only while the mouse is over the element | string | (none)
-selectClass | Class or classes to be applied only while the element is selected | string | (none)
-pressClass | Class or classes to be applied only while the element is pressed | string | (none)
 
 ####Visibility Targets
 The visibility attribute allows for only certain people or groups to see an element. Hiding an element will hide its children as well.
@@ -162,21 +158,12 @@ Attribute&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 -- | -- | -- | --
 tooltip | Tooltip text. | string | *(none)*
 tooltipBorderColor | Color of the tooltips border. | [<span class="tag xmlco"></span>](attributes#attribute-types) | `#FFFFFF`
-tooltipBackgroundColor | Color of the tooltips background | [<span class="tag xmlco"></span>](attributes#attribute-types) | `rgba(0,0,0,0.62)`\*
-tooltipTextColor | Color of the text within this tooltip | [<span class="tag xmlco"></span>](attributes#attribute-types) | `white`
-tooltipTextOutlineColor | Color of the outline around the text within this tooltip. | [<span class="tag xmlco"></span>](attributes#attribute-types) | `black`
-tooltipFont | Font used for the tooltip text. Only `Arial` and `Courier New` are known to work. | string | `Arial`\*
-tooltipFontSize | Size of the tooltip text. | int | `12`
-tooltipPosition | Position of this tooltip in relation to the element. | <ul><li>Above</li><li>Below</li><li>Left</li><li>Right</li></ul> | `Right`\*
-tooltipBorderImage | This attribute allows you to override the default image used for the tooltips border. | string | \*
-tooltipBackgroundImage | This attribute allows you to override the default image used for the tooltips background. | string | \*
-tooltipOffset | This attribute allows you to modify the distance this tooltip will appear from the element. | float | `10`\*
-tooltipWidth | The tooltip's maximum width before wrapping, or `0` for none. | float | (none)
-tooltipDelayTime | How many seconds the element must be hovered before the tooltip shows. | float | ~`0.1`\*
-tooltipFadeTime | How many seconds it takes for the tooltip to fade in or out. | float | ~`0.2`\*
-
-!!!bug
-    For each attribute marked with an asterisk (\*), if a tooltip is hovered with that attribute specified, then that tooltip's setting becomes the new default for any tooltips with that attribute unspecified.
+tooltipBackgroundColor | Color of the tooltips background | [<span class="tag xmlco"></span>](attributes#attribute-types) | `rgba(0,0,0,0.62)`
+tooltipTextColor | Color of the text within this tooltip | [<span class="tag xmlco"></span>](attributes#attribute-types) |
+tooltipPosition | Position of this tooltip in relation to the element. | <ul><li>Above</li><li>Below</li><li>Left</li><li>Right</li></ul> | `Right`
+tooltipBorderImage | This attribute allows you to override the default image used for the tooltips border. | string |
+tooltipBackgroundImage | This attribute allows you to override the default image used for the tooltips background. | string |
+tooltipOffset | This attribute allows you to modify the distance this tooltip will appear from the element. | float |
 
 ###Event Attributes
 Allows Lua scripting events to be triggered by any element, through a variety of interactions. See the [Input Elements](inputelements) page for how to interact with Lua scripting.
