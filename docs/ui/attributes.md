@@ -66,7 +66,6 @@ Attribute&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 text | This can be used to determine the text that appears. It can also be modified externally by the script. | string | *(none)*
 alignment | | <ul><li>UpperLeft</li><li>UpperCenter</li><li>UpperRight</li><li>MiddleLeft</li><li>MiddleCenter</li><li>MiddleRight</li><li>LowerLeft</li><li>LowerCenter</li><li>LowerRight</li></ul> | MiddleCenter
 color | | [<span class="tag xmlco"></span>](attributes#attribute-types) | `#323232`
-font | The font used for the text. Only `Arial` and `Courier New` are known to work. | string | `Arial`
 fontStyle | | <ul><li>Normal</li><li>Bold</li><li>Italic</li><li>BoldItalic</li></ul> | `Normal`
 fontSize | | float | `14`
 resizeTextForBestFit | Resize text to fit? | [<span class="tag boo"></span>](attributes#attribute-types) | `false`
@@ -74,8 +73,6 @@ resizeTextMinSize | Minimum font size | float | `10`
 resizeTextMaxSize | Maximum font size | float | `40`
 horizontalOverflow | | <ul><li>Wrap</li><li>Overflow</li></ul> | `Overflow`
 verticalOverflow | | <ul><li>Truncate</li><li>Overflow</li></ul> | `Truncate`
-lineSpacing | How much space to leave between each line. | float | `1`
-alignByGeometry | Whether text bounds are calculated based on character shapes as opposed to font data | [<span class="tag boo"></span>](attributes#attribute-types) | `false`
 
 
 ###Image Attributes
