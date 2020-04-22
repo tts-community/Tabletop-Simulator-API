@@ -11,6 +11,7 @@ Tag | Type | Description | Example
 [<span class="tag str"></span>](/types)&nbsp;| string | A series of characters. | `#!lua "Hello."`
 [<span class="tag tab"></span>](/types)&nbsp;| table | A container with keys and values. | `#!lua {["key"]="value", true, 5}`
 [<span class="tag obj"></span>](/types)&nbsp;| object | An in-game physical Object. Sometimes Global. | `#!lua Global or self`
+[<span class="tag sel"></span>](/types)&nbsp;| self | A reference to the current Lua Object. | `#!lua self`
 [<span class="tag pla"></span>](/types)&nbsp;| player | An in-game Player. | `#!lua Player["White"]`
 [<span class="tag var"></span>](/types)&nbsp;| variable | A combination of other types. |
 
@@ -79,12 +80,15 @@ Example: `printToAll("Test", "Green")`
 
 ---
 
-
-
 ###Vector
-<span class="tag vec"></span> Vector is a type of Table that is used to define a position, rotation or direction.
+<span class="tag vec"></span> Vector is a type of Object with x, y, and z coordinates that is used to define a position, rotation or direction.
+
+You can use the [Vector](../vector) class to manipulate vectors.
+
+Example: `#!lua target = Vector(1, 0, 0) + Vector(0, 2, 0):normalized()`
+
 ####Keys
-The Table will contain the keys `x`, `y`, `z` and/or `1`, `2`, `3`. The letter and numeric keys are duplicates of each other.
+The Table will contain the keys `x`, `y`, `z` and/or `1`, `2`, `3`. The letter and numeric keys are equivalent.
 
  Letter Key | Number Key
  :--: | :--:
@@ -92,28 +96,16 @@ The Table will contain the keys `x`, `y`, `z` and/or `1`, `2`, `3`. The letter a
  y | 2
  z | 3
 
-
-As an example, An Object at coordinate X=5, Y=2, Z=-1 would return this table:
+As an example, An Object at coordinate X=5, Y=2, Z=-1 would return this [`Vector`](../vector):
 ``` Lua
 {
     x=5, y=2, z=-1,
-    1=5, 2=2, 3=-1,
 }
 ```
 
 ####Mixed Keys
 
-
-Only one type of key, number or letter, is required. If both a are present in a Table, the numeric key is ignored and only the **letter key** is used.
-
-``` Lua
---Valid Table for 1 to the right
-{x=1, y=0, z=0}
---Valid Table for 1 unit forward
-{0, 0, 1}
---This Table would be for 1 unit to the right.
-{x=1, y=0, z=0, 0, 0, 1}
-```
+Before [`Vector`](../vector) was introduced, coordinate tables contained separate values under 1, 2, 3 and x, y, z keys, with letter keys taking precedence when they were different. This is no longer the case, and using letter and numerical keys is equivalent. However, when iterating over Vector components you have to use `pairs` and only letter keys will be read there.
 
 ####Value Range
 
