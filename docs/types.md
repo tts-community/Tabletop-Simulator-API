@@ -4,16 +4,15 @@ Type refers to the type of information being used. You do not need to declare a 
 
 Tag | Type | Description | Example
 -- | -- | -- | --
-[<span class="tag nil"></span>](/types)&nbsp;| nil | No value. | `#!lua nil`
-[<span class="tag int"></span>](/types)&nbsp;| int | Non-decimal value. | `#!lua 5`
-[<span class="tag flo"></span>](/types)&nbsp;| float | Non-exact decimal value. | `#!lua 2.032`
-[<span class="tag boo"></span>](/types)&nbsp;| bool | `true` or `false` value. | `#!lua true`
-[<span class="tag str"></span>](/types)&nbsp;| string | A series of characters. | `#!lua "Hello."`
-[<span class="tag tab"></span>](/types)&nbsp;| table | A container with keys and values. | `#!lua {["key"]="value", true, 5}`
-[<span class="tag obj"></span>](/types)&nbsp;| object | An in-game physical Object. Sometimes Global. | `#!lua Global or self`
-[<span class="tag sel"></span>](/types)&nbsp;| self | A reference to the current Lua Object. | `#!lua self`
-[<span class="tag pla"></span>](/types)&nbsp;| player | An in-game Player. | `#!lua Player["White"]`
-[<span class="tag var"></span>](/types)&nbsp;| variable | A combination of other types. |
+[<span class="tag nil"></span>](./)&nbsp;| nil | No value. | `#!lua nil`
+[<span class="tag int"></span>](./)&nbsp;| int | Non-decimal value. | `#!lua 5`
+[<span class="tag flo"></span>](./)&nbsp;| float | Non-exact decimal value. | `#!lua 2.032`
+[<span class="tag boo"></span>](./)&nbsp;| bool | `true` or `false` value. | `#!lua true`
+[<span class="tag str"></span>](./)&nbsp;| string | A series of characters. | `#!lua "Hello."`
+[<span class="tag tab"></span>](./)&nbsp;| table | A container with keys and values. | `#!lua {["key"]="value", true, 5}`
+[<span class="tag obj"></span>](./)&nbsp;| object | An in-game physical Object. Sometimes Global. | `#!lua Global or self`
+[<span class="tag pla"></span>](./)&nbsp;| player | An in-game Player. | `#!lua Player["White"]`
+[<span class="tag var"></span>](./)&nbsp;| variable | A combination of other types. |
 
 You will also see tags for Color, Vector, and Function. See below for more info.
 
@@ -74,7 +73,7 @@ self.setColorTint({50/255, 83/255, 199/255})
 
 ####Strings
 
-You are also able to use a String in place of a color table. Using a [Player Color](player-color) will automatically fill in that value. It works with any of the 12 color names, as they are written on the [Player Color](player-color) page.
+You are also able to use a String in place of a color table. Using a [Player Color](../player-color/) will automatically fill in that value. It works with any of the 12 color names, as they are written on the [Player Color](../player-color/) page.
 
 Example: `printToAll("Test", "Green")`
 
@@ -129,7 +128,7 @@ World | The center of the instance is `{x=0, y=0, z=0}`. That is usually near th
 Local | The center of the Object's model is `{x=0, y=0, z=0}`. The center of an Object is determined by the model's creator.
 
 ???tip "Conversion Between World/Local"
-     [positionToWorld(...)](../object#positiontoworld) and [positionToLocal(...)](../object#positiontolocal) can be used to convert between the two types.
+     [positionToWorld(...)](../object/#positiontoworld) and [positionToLocal(...)](../object/#positiontolocal) can be used to convert between the two types.
 
 #####Rotation
 
@@ -176,7 +175,7 @@ end
 
 ####Example
 
-As an example, here is [Wait.frames(...)](wait#frames) used 3 times. It waits a set number of frames and then activates a given function:
+As an example, here is [Wait.frames(...)](../wait/#frames) used 3 times. It waits a set number of frames and then activates a given function:
 
 ``` Lua
 function onLoad()
