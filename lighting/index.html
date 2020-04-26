@@ -2155,7 +2155,7 @@
                 <p>Lighting, a static global class, is the in-game light of the map. It allows you to modify the lighting of the instance in the same way that the <a href="http://berserk-games.com/knowledgebase/lighting/">in-game lighting menu</a> does. You call these functions like this: <code class="codehilite">Lighting.apply()</code>.</p>
 <p>For more information on lighting in Unity, <a href="https://docs.unity3d.com/Manual/LightingOverview.html">refer to the Unity documentation</a>.</p>
 <h2 id="member-variables">Member Variables<a class="headerlink" href="#member-variables" title="Permanent link"> </a></h2>
-<p>Like <a href="object#member-variables">Object member variables</a>, Lighting has its own member variables. They are all numbers, and have specific valid ranges.</p>
+<p>Like <a href="../object/#member-variables">Object member variables</a>, Lighting has its own member variables. They are all numbers, and have specific valid ranges.</p>
 <table>
 <thead>
 <tr>
@@ -2168,22 +2168,22 @@
 <tr>
 <td><a class="anchor" id="ambient_type"></a>ambient_type</td>
 <td>The source of ambient light. 1 = background, 2 = gradient.</td>
-<td align="left"><a href="/types"><span class="tag int"></span></a></td>
+<td align="left"><a href="../types/"><span class="tag int"></span></a></td>
 </tr>
 <tr>
 <td><a class="anchor" id="ambient_intensity"></a>ambient_intensity</td>
 <td>The strength of the ambient light. Range = 0 to 4.</td>
-<td align="left"><a href="/types"><span class="tag flo"></span></a></td>
+<td align="left"><a href="../types/"><span class="tag flo"></span></a></td>
 </tr>
 <tr>
 <td><a class="anchor" id="light_intensity"></a>light_intensity</td>
 <td>The strength of the directional light shining down in the scene. Range = 0 to 4.</td>
-<td align="left"><a href="/types"><span class="tag flo"></span></a></td>
+<td align="left"><a href="../types/"><span class="tag flo"></span></a></td>
 </tr>
 <tr>
 <td><a class="anchor" id="reflection_intensity"></a>reflection_intensity</td>
 <td>The strength of the reflections from the background. Range = 0 to 1.</td>
-<td align="left"><a href="/types"><span class="tag flo"></span></a></td>
+<td align="left"><a href="../types/"><span class="tag flo"></span></a></td>
 </tr>
 </tbody>
 </table>
@@ -2201,47 +2201,47 @@
 <tr>
 <td><a class="anchor" id="apply"></a>apply()</td>
 <td>Applies changes made to the lighting Class using these functions or member variables.</td>
-<td align="right"><a href="/types"><span class="ret boo"></span></a></td>
+<td align="right"><a href="../types/"><span class="ret boo"></span></a></td>
 </tr>
 <tr>
 <td><a class="anchor" id="getambientequatorcolor"></a>getAmbientEquatorColor()</td>
 <td>Returns Color Table of the gradient equator. Not used if <code class="codehilite">ambient_type = 1</code>.</td>
-<td align="right"><a href="/types#color"><span class="ret col"></span></a></td>
+<td align="right"><a href="../types/#color"><span class="ret col"></span></a></td>
 </tr>
 <tr>
 <td><a class="anchor" id="getambientgroundcolor"></a>getAmbientGroundColor()</td>
 <td>Returns Color Table of the gradient ground. Not used if <code class="codehilite">ambient_type = 1</code>.</td>
-<td align="right"><a href="/types#color"><span class="ret col"></span></a></td>
+<td align="right"><a href="../types/#color"><span class="ret col"></span></a></td>
 </tr>
 <tr>
 <td><a class="anchor" id="getambientskycolor"></a>getAmbientSkyColor()</td>
 <td>Returns Color Table of the gradient sky. Not used if <code class="codehilite">ambient_type = 1</code>.</td>
-<td align="right"><a href="/types#color"><span class="ret col"></span></a></td>
+<td align="right"><a href="../types/#color"><span class="ret col"></span></a></td>
 </tr>
 <tr>
 <td><a class="anchor" id="getlightcolor"></a>getLightColor()</td>
 <td>Returns Color Table of the directional light, which shines straight down on the table.</td>
-<td align="right"><a href="/types#color"><span class="ret col"></span></a></td>
+<td align="right"><a href="../types/#color"><span class="ret col"></span></a></td>
 </tr>
 <tr>
-<td><a class="anchor" id="setambientequatorcolor"></a>setAmbientEquatorColor(<a href="/types#color"><span class="tag col"></span></a>&nbsp;tint)</td>
+<td><a class="anchor" id="setambientequatorcolor"></a>setAmbientEquatorColor(<a href="../types/#color"><span class="tag col"></span></a>&nbsp;tint)</td>
 <td>Sets the color of the gradient equator. Not used if <code class="codehilite">ambient_type = 1</code>.</td>
-<td align="right"><a href="/types"><span class="ret boo"></span></a></td>
+<td align="right"><a href="../types/"><span class="ret boo"></span></a></td>
 </tr>
 <tr>
-<td><a class="anchor" id="setambientgroundcolor"></a>setAmbientGroundColor(<a href="/types#color"><span class="tag col"></span></a>&nbsp;tint)</td>
+<td><a class="anchor" id="setambientgroundcolor"></a>setAmbientGroundColor(<a href="../types/#color"><span class="tag col"></span></a>&nbsp;tint)</td>
 <td>Sets the color of the gradient ground. Not used if <code class="codehilite">ambient_type = 1</code>.</td>
-<td align="right"><a href="/types"><span class="ret boo"></span></a></td>
+<td align="right"><a href="../types/"><span class="ret boo"></span></a></td>
 </tr>
 <tr>
-<td><a class="anchor" id="setambientskycolor"></a>setAmbientSkyColor(<a href="/types#color"><span class="tag col"></span></a>&nbsp;tint)</td>
+<td><a class="anchor" id="setambientskycolor"></a>setAmbientSkyColor(<a href="../types/#color"><span class="tag col"></span></a>&nbsp;tint)</td>
 <td>Sets the color of the gradient sky. Not used if <code class="codehilite">ambient_type = 1</code>.</td>
-<td align="right"><a href="/types"><span class="ret boo"></span></a></td>
+<td align="right"><a href="../types/"><span class="ret boo"></span></a></td>
 </tr>
 <tr>
-<td><a class="anchor" id="setlightcolor"></a>setLightColor(<a href="/types#color"><span class="tag col"></span></a>&nbsp;tint)</td>
+<td><a class="anchor" id="setlightcolor"></a>setLightColor(<a href="../types/#color"><span class="tag col"></span></a>&nbsp;tint)</td>
 <td>Sets the color of the directional light, which shines straight down on the table.</td>
-<td align="right"><a href="/types"><span class="ret boo"></span></a></td>
+<td align="right"><a href="../types/"><span class="ret boo"></span></a></td>
 </tr>
 </tbody>
 </table>

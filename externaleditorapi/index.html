@@ -2278,7 +2278,7 @@
                 
                   <h1>External Editor API</h1>
                 
-                <p>This page describes how our <a href="atom">Official Atom Plugin</a> API works so that you can write your own plugin for your text editor of choice if Atom does not suit your needs.</p>
+                <p>This page describes how our <a href="../atom/">Official Atom Plugin</a> API works so that you can write your own plugin for your text editor of choice if Atom does not suit your needs.</p>
 <p>Communication between the editor and TTS occurs via two localhost TCP connections: one where TTS listens for messages and one where the editor listens for messages. All communication messages are JSON.</p>
 <h2 id="atom-as-the-server">Atom as the Server<a class="headerlink" href="#atom-as-the-server" title="Permanent link"> </a></h2>
 <p>The following are messages the editor plugin listens for and handles.</p>
@@ -2399,7 +2399,7 @@
 <p>Any objects mentioned have both their Lua script and their UI XML updated. If no value is set for either the "script" or "ui" key then the corresponding Lua script or UI XML is deleted. That means if you want to update a Lua script for an object without changing its UI XML, then the message must contain both the updated Lua script and the unchanged UI XML.</p>
 <p>After TTS reloads the game, it then also sends a message with an ID of 1 back to the editor, with content the same as the message TTS sends when loading a new game.</p>
 <h3 id="custom-message">Custom Message<a class="headerlink" href="#custom-message" title="Permanent link"> </a></h3>
-<p>TTS listens for a JSON message with an ID of 2 containing a custom message to be forwarded to the <a href="event#onexternalmessage"><code class="codehilite">onExternalMessage</code></a> event handler in the currently loaded game.</p>
+<p>TTS listens for a JSON message with an ID of 2 containing a custom message to be forwarded to the <a href="../event/#onexternalmessage"><code class="codehilite">onExternalMessage</code></a> event handler in the currently loaded game.</p>
 <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;messageID&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
     <span class="nt">&quot;customMessage&quot;</span><span class="p">:</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>

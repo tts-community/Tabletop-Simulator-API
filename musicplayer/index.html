@@ -2266,27 +2266,27 @@
 <tr>
 <td><a class="anchor" id="repeat_track"></a>repeat_track</td>
 <td>If the current audioclip should be repeated.</td>
-<td align="left"><a href="/types"><span class="tag boo"></span></a></td>
+<td align="left"><a href="../types/"><span class="tag boo"></span></a></td>
 </tr>
 <tr>
 <td><a class="anchor" id="shuffle"></a>shuffle</td>
 <td>If the playlist should play shuffled.</td>
-<td align="left"><a href="/types"><span class="tag boo"></span></a></td>
+<td align="left"><a href="../types/"><span class="tag boo"></span></a></td>
 </tr>
 <tr>
 <td><a class="anchor" id="playlistIndex"></a>playlistIndex</td>
 <td>Current index of the playlist. -1 if no playlist audioclip is playing.</td>
-<td align="left"><a href="/types"><span class="tag int"></span></a></td>
+<td align="left"><a href="../types/"><span class="tag int"></span></a></td>
 </tr>
 <tr>
 <td><a class="anchor" id="loaded"></a>loaded</td>
 <td>If all players loaded the current audioclip. Read only.</td>
-<td align="left"><a href="/types"><span class="tag boo"></span></a></td>
+<td align="left"><a href="../types/"><span class="tag boo"></span></a></td>
 </tr>
 <tr>
 <td><a class="anchor" id="player_status"></a>player_status</td>
 <td>The current state of the music player. Read only. <br/>Options: "Stop", "Play", "Loading", "Ready".</td>
-<td align="left"><a href="/types"><span class="tag str"></span></a></td>
+<td align="left"><a href="../types/"><span class="tag str"></span></a></td>
 </tr>
 </tbody>
 </table>
@@ -2305,49 +2305,49 @@
 <tr>
 <td><a class="anchor" id="play"></a>play()</td>
 <td>Plays currently loaded audioclip. Returns true if the music player is playing, otherwise returns false.</td>
-<td align="right"><a href="/types"><span class="ret boo"></span></a>(#play)</td>
+<td align="right"><a href="../types/"><span class="ret boo"></span></a>(#play)</td>
 </tr>
 <tr>
 <td><a class="anchor" id="pause"></a>pause()</td>
 <td>Pauses currently playing audioclip. Returns true if the music player is paused, otherwise returns false.</td>
-<td align="right"><a href="/types"><span class="ret boo"></span></a>(#pause)</td>
+<td align="right"><a href="../types/"><span class="ret boo"></span></a>(#pause)</td>
 </tr>
 <tr>
 <td><a class="anchor" id="skipForward"></a>skipForward()</td>
 <td>Skips to the next audioclip in playlist if possible. Returns true if skip was successful, otherwise returns false.</td>
-<td align="right"><a href="/types"><span class="ret boo"></span></a>(#skipForward)</td>
+<td align="right"><a href="../types/"><span class="ret boo"></span></a>(#skipForward)</td>
 </tr>
 <tr>
 <td><a class="anchor" id="skipBack"></a>skipBack()</td>
 <td>Skips to the beginning of the audioclip or if the play time is less than 3 seconds to the previous audioclip in playlist if possible. Returns true if skip was successful, otherwise returns false.</td>
-<td align="right"><a href="/types"><span class="ret boo"></span></a>(#skipBack)</td>
+<td align="right"><a href="../types/"><span class="ret boo"></span></a>(#skipBack)</td>
 </tr>
 <tr>
 <td><a class="anchor" id="getCurrentAudioclip"></a>getCurrentAudioclip()</td>
 <td>Gets the currently loaded audioclip.</td>
-<td align="right"><a href="/types"><span class="ret tab"></span></a>(#getCurrentAudioclip)</td>
+<td align="right"><a href="../types/"><span class="ret tab"></span></a>(#getCurrentAudioclip)</td>
 </tr>
 <tr>
 <td><a class="anchor" id="setCurrentAudioclip"></a>setCurrentAudioclip()</td>
 <td>Sets the audioclip to be loaded.</td>
-<td align="right"><a href="/types"><span class="ret boo"></span></a>(#setCurrentAudioclip)</td>
+<td align="right"><a href="../types/"><span class="ret boo"></span></a>(#setCurrentAudioclip)</td>
 </tr>
 <tr>
 <td><a class="anchor" id="getPlaylist"></a>getPlaylist()</td>
 <td>Gets the current playlist.</td>
-<td align="right"><a href="/types"><span class="ret tab"></span></a>(#getPlaylist)</td>
+<td align="right"><a href="../types/"><span class="ret tab"></span></a>(#getPlaylist)</td>
 </tr>
 <tr>
 <td><a class="anchor" id="setPlaylist"></a>setPlaylist()</td>
 <td>Sets the current playlist.</td>
-<td align="right"><a href="/types"><span class="ret boo"></span></a>(#setPlaylist)</td>
+<td align="right"><a href="../types/"><span class="ret boo"></span></a>(#setPlaylist)</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h2 id="function-details">Function Details<a class="headerlink" href="#function-details" title="Permanent link"> </a></h2>
 <h4 id="play">play()<a class="headerlink" href="#play" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret boo"></span></a>&nbsp;Plays currently loaded audioclip. Returns true if the music player is playing, otherwise returns false.</p>
+<p><a href="../types/"><span class="ret boo"></span></a>&nbsp;Plays currently loaded audioclip. Returns true if the music player is playing, otherwise returns false.</p>
 <div class="codehilite"><pre><span></span><span class="c1">--Example Usage</span>
 <span class="n">startLuaCoroutine</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="s2">&quot;PlayMusic&quot;</span><span class="p">)</span>
 
@@ -2367,7 +2367,7 @@
 
 <hr />
 <h4 id="pause">pause()<a class="headerlink" href="#pause" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret boo"></span></a>&nbsp;Pauses currently playing audioclip. Returns true if the music player is paused, otherwise returns false.</p>
+<p><a href="../types/"><span class="ret boo"></span></a>&nbsp;Pauses currently playing audioclip. Returns true if the music player is paused, otherwise returns false.</p>
 <div class="codehilite"><pre><span></span><span class="c1">--Example Usage</span>
 <span class="n">startLuaCoroutine</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="s2">&quot;PauseMusic&quot;</span><span class="p">)</span>
 
@@ -2387,21 +2387,21 @@
 
 <hr />
 <h4 id="skipforward">skipForward()<a class="headerlink" href="#skipforward" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret boo"></span></a>&nbsp;Skips to the next audioclip in playlist if possible. Returns true if skip was successful, otherwise returns false.</p>
+<p><a href="../types/"><span class="ret boo"></span></a>&nbsp;Skips to the next audioclip in playlist if possible. Returns true if skip was successful, otherwise returns false.</p>
 <div class="codehilite"><pre><span></span><span class="c1">--Example Usage</span>
 <span class="n">MusicPlayer</span><span class="p">.</span><span class="n">skipForward</span><span class="p">()</span>
 </pre></div>
 
 <hr />
 <h4 id="skipback">skipBack()<a class="headerlink" href="#skipback" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret boo"></span></a>&nbsp;Skips to the beginning of the audioclip or if the play time is less than 3 seconds to the previous audioclip in playlist if possible. Returns true if skip was successful, otherwise returns false.</p>
+<p><a href="../types/"><span class="ret boo"></span></a>&nbsp;Skips to the beginning of the audioclip or if the play time is less than 3 seconds to the previous audioclip in playlist if possible. Returns true if skip was successful, otherwise returns false.</p>
 <div class="codehilite"><pre><span></span><span class="c1">--Example Usage</span>
 <span class="n">MusicPlayer</span><span class="p">.</span><span class="n">skipBack</span><span class="p">()</span>
 </pre></div>
 
 <hr />
 <h4 id="getcurrentaudioclip">getCurrentAudioclip()<a class="headerlink" href="#getcurrentaudioclip" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret tab"></span></a>&nbsp;Gets the currently loaded audioclip.</p>
+<p><a href="../types/"><span class="ret tab"></span></a>&nbsp;Gets the currently loaded audioclip.</p>
 <p><div class="codehilite"><pre><span></span><span class="c1">--Example Usage</span>
 <span class="n">currentAudioclip</span> <span class="o">=</span> <span class="n">MusicPlayer</span><span class="p">.</span><span class="n">getCurrentAudioclip</span><span class="p">()</span>
 </pre></div>
@@ -2410,13 +2410,13 @@
 </pre></div></p>
 <hr />
 <h4 id="setcurrentaudioclip">setCurrentAudioclip(...)<a class="headerlink" href="#setcurrentaudioclip" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret boo"></span></a>&nbsp;.Sets the audioclip to be loaded.</p>
+<p><a href="../types/"><span class="ret boo"></span></a>&nbsp;.Sets the audioclip to be loaded.</p>
 <div class="admonition info">
 <p class="admonition-title">setCurrentAudioclip(parameters)</p>
 <ul>
-<li><a href="/types"><span class="tag tab"></span></a> <strong>parameters</strong>: A Table containing the audioclip parameters.<ul>
-<li><a href="/types"><span class="tag str"></span></a> <strong>parameters.url</strong>: Url for the new audioclip.</li>
-<li><a href="/types"><span class="tag str"></span></a> <strong>parameters.title</strong>: Title for the new audioclip.</li>
+<li><a href="../types/"><span class="tag tab"></span></a> <strong>parameters</strong>: A Table containing the audioclip parameters.<ul>
+<li><a href="../types/"><span class="tag str"></span></a> <strong>parameters.url</strong>: Url for the new audioclip.</li>
+<li><a href="../types/"><span class="tag str"></span></a> <strong>parameters.title</strong>: Title for the new audioclip.</li>
 </ul>
 </li>
 </ul>
@@ -2432,7 +2432,7 @@
 
 <hr />
 <h4 id="getplaylist">getPlaylist()<a class="headerlink" href="#getplaylist" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret tab"></span></a>&nbsp;Gets the current playlist.</p>
+<p><a href="../types/"><span class="ret tab"></span></a>&nbsp;Gets the current playlist.</p>
 <p><div class="codehilite"><pre><span></span><span class="c1">--Example Usage</span>
 <span class="n">playlist</span> <span class="o">=</span> <span class="n">MusicPlayer</span><span class="p">.</span><span class="n">getPlaylist</span><span class="p">()</span>
 </pre></div>
@@ -2445,14 +2445,14 @@
 </pre></div></p>
 <hr />
 <h4 id="setplaylist">setPlaylist(...)<a class="headerlink" href="#setplaylist" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret boo"></span></a>&nbsp;.Sets the current playlist.</p>
+<p><a href="../types/"><span class="ret boo"></span></a>&nbsp;.Sets the current playlist.</p>
 <div class="admonition info">
 <p class="admonition-title">setPlaylist(parameters)</p>
 <ul>
-<li><a href="/types"><span class="tag tab"></span></a> <strong>parameters</strong>: A Table containing the playlist parameters.<ul>
-<li><a href="/types"><span class="tag tab"></span></a> <strong>parameters</strong>: A Table containing the audioclip parameters.<ul>
-<li><a href="/types"><span class="tag str"></span></a> <strong>parameters.url</strong>: Url for the new audioclip.</li>
-<li><a href="/types"><span class="tag str"></span></a> <strong>parameters.title</strong>: Title for the new audioclip.</li>
+<li><a href="../types/"><span class="tag tab"></span></a> <strong>parameters</strong>: A Table containing the playlist parameters.<ul>
+<li><a href="../types/"><span class="tag tab"></span></a> <strong>parameters</strong>: A Table containing the audioclip parameters.<ul>
+<li><a href="../types/"><span class="tag str"></span></a> <strong>parameters.url</strong>: Url for the new audioclip.</li>
+<li><a href="../types/"><span class="tag str"></span></a> <strong>parameters.title</strong>: Title for the new audioclip.</li>
 </ul>
 </li>
 </ul>

@@ -2437,61 +2437,55 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="/types"><span class="tag nil"></span></a>&nbsp;</td>
+<td><a href="./"><span class="tag nil"></span></a>&nbsp;</td>
 <td>nil</td>
 <td>No value.</td>
 <td><code class="codehilite"><span class="kc">nil</span></code></td>
 </tr>
 <tr>
-<td><a href="/types"><span class="tag int"></span></a>&nbsp;</td>
+<td><a href="./"><span class="tag int"></span></a>&nbsp;</td>
 <td>int</td>
 <td>Non-decimal value.</td>
 <td><code class="codehilite"><span class="mi">5</span></code></td>
 </tr>
 <tr>
-<td><a href="/types"><span class="tag flo"></span></a>&nbsp;</td>
+<td><a href="./"><span class="tag flo"></span></a>&nbsp;</td>
 <td>float</td>
 <td>Non-exact decimal value.</td>
 <td><code class="codehilite"><span class="mf">2.032</span></code></td>
 </tr>
 <tr>
-<td><a href="/types"><span class="tag boo"></span></a>&nbsp;</td>
+<td><a href="./"><span class="tag boo"></span></a>&nbsp;</td>
 <td>bool</td>
 <td><code class="codehilite">true</code> or <code class="codehilite">false</code> value.</td>
 <td><code class="codehilite"><span class="kc">true</span></code></td>
 </tr>
 <tr>
-<td><a href="/types"><span class="tag str"></span></a>&nbsp;</td>
+<td><a href="./"><span class="tag str"></span></a>&nbsp;</td>
 <td>string</td>
 <td>A series of characters.</td>
 <td><code class="codehilite"><span class="s2">&quot;Hello.&quot;</span></code></td>
 </tr>
 <tr>
-<td><a href="/types"><span class="tag tab"></span></a>&nbsp;</td>
+<td><a href="./"><span class="tag tab"></span></a>&nbsp;</td>
 <td>table</td>
 <td>A container with keys and values.</td>
 <td><code class="codehilite"><span class="p">{[</span><span class="s2">&quot;key&quot;</span><span class="p">]</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span></code></td>
 </tr>
 <tr>
-<td><a href="/types"><span class="tag obj"></span></a>&nbsp;</td>
+<td><a href="./"><span class="tag obj"></span></a>&nbsp;</td>
 <td>object</td>
 <td>An in-game physical Object. Sometimes Global.</td>
 <td><code class="codehilite"><span class="n">Global</span> <span class="ow">or</span> <span class="n">self</span></code></td>
 </tr>
 <tr>
-<td><a href="/types"><span class="tag sel"></span></a>&nbsp;</td>
-<td>self</td>
-<td>A reference to the current Lua Object.</td>
-<td><code class="codehilite"><span class="n">self</span></code></td>
-</tr>
-<tr>
-<td><a href="/types"><span class="tag pla"></span></a>&nbsp;</td>
+<td><a href="./"><span class="tag pla"></span></a>&nbsp;</td>
 <td>player</td>
 <td>An in-game Player.</td>
 <td><code class="codehilite"><span class="n">Player</span><span class="p">[</span><span class="s2">&quot;White&quot;</span><span class="p">]</span></code></td>
 </tr>
 <tr>
-<td><a href="/types"><span class="tag var"></span></a>&nbsp;</td>
+<td><a href="./"><span class="tag var"></span></a>&nbsp;</td>
 <td>variable</td>
 <td>A combination of other types.</td>
 <td></td>
@@ -2564,12 +2558,12 @@
 <span class="n">self</span><span class="p">.</span><span class="n">setColorTint</span><span class="p">({</span><span class="mi">50</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span> <span class="mi">83</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span> <span class="mi">199</span><span class="o">/</span><span class="mi">255</span><span class="p">})</span>
 </pre></div></p>
 <h4 id="strings">Strings<a class="headerlink" href="#strings" title="Permanent link"> </a></h4>
-<p>You are also able to use a String in place of a color table. Using a <a href="player-color">Player Color</a> will automatically fill in that value. It works with any of the 12 color names, as they are written on the <a href="player-color">Player Color</a> page.</p>
+<p>You are also able to use a String in place of a color table. Using a <a href="../player-color/">Player Color</a> will automatically fill in that value. It works with any of the 12 color names, as they are written on the <a href="../player-color/">Player Color</a> page.</p>
 <p>Example: <code class="codehilite">printToAll(&quot;Test&quot;, &quot;Green&quot;)</code></p>
 <hr />
 <h3 id="vector">Vector<a class="headerlink" href="#vector" title="Permanent link"> </a></h3>
 <p><span class="tag vec"></span> Vector is a type of Object with x, y, and z coordinates that is used to define a position, rotation or direction.</p>
-<p>You can use the <a href="../vector">Vector</a> class to manipulate vectors.</p>
+<p>You can use the <a href="../vector/">Vector</a> class to manipulate vectors.</p>
 <p>Example: <code class="codehilite"><span class="n">target</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span><span class="n">normalized</span><span class="p">()</span></code></p>
 <h4 id="keys_1">Keys<a class="headerlink" href="#keys_1" title="Permanent link"> </a></h4>
 <p>The Table will contain the keys <code class="codehilite">x</code>, <code class="codehilite">y</code>, <code class="codehilite">z</code> and/or <code class="codehilite">1</code>, <code class="codehilite">2</code>, <code class="codehilite">3</code>. The letter and numeric keys are equivalent.</p>
@@ -2595,13 +2589,13 @@
 </tr>
 </tbody>
 </table>
-<p>As an example, An Object at coordinate X=5, Y=2, Z=-1 would return this <a href="../vector"><code class="codehilite">Vector</code></a>:
+<p>As an example, An Object at coordinate X=5, Y=2, Z=-1 would return this <a href="../vector/"><code class="codehilite">Vector</code></a>:
 <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">z</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>
 <span class="p">}</span>
 </pre></div></p>
 <h4 id="mixed-keys_1">Mixed Keys<a class="headerlink" href="#mixed-keys_1" title="Permanent link"> </a></h4>
-<p>Before <a href="../vector"><code class="codehilite">Vector</code></a> was introduced, coordinate tables contained separate values under 1, 2, 3 and x, y, z keys, with letter keys taking precedence when they were different. This is no longer the case, and using letter and numerical keys is equivalent. However, when iterating over Vector components you have to use <code class="codehilite">pairs</code> and only letter keys will be read there.</p>
+<p>Before <a href="../vector/"><code class="codehilite">Vector</code></a> was introduced, coordinate tables contained separate values under 1, 2, 3 and x, y, z keys, with letter keys taking precedence when they were different. This is no longer the case, and using letter and numerical keys is equivalent. However, when iterating over Vector components you have to use <code class="codehilite">pairs</code> and only letter keys will be read there.</p>
 <h4 id="value-range">Value Range<a class="headerlink" href="#value-range" title="Permanent link"> </a></h4>
 <p>The range of values depend on the type of Vector you are using.</p>
 <table>
@@ -2651,7 +2645,7 @@
 </tr>
 </tbody>
 </table>
-<details class="tip"><summary>Conversion Between World/Local</summary><p><a href="../object#positiontoworld">positionToWorld(...)</a> and <a href="../object#positiontolocal">positionToLocal(...)</a> can be used to convert between the two types.</p>
+<details class="tip"><summary>Conversion Between World/Local</summary><p><a href="../object/#positiontoworld">positionToWorld(...)</a> and <a href="../object/#positiontolocal">positionToLocal(...)</a> can be used to convert between the two types.</p>
 </details>
 <h5 id="rotation">Rotation<a class="headerlink" href="#rotation" title="Permanent link"> </a></h5>
 <p>X is pitch (nodding your head), Y is yaw (shaking you head), Z is roll (tilting your head).</p>
@@ -2685,7 +2679,7 @@ Instead, make the print the result of a function running:
 </div>
 <hr />
 <h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link"> </a></h4>
-<p>As an example, here is <a href="wait#frames">Wait.frames(...)</a> used 3 times. It waits a set number of frames and then activates a given function:</p>
+<p>As an example, here is <a href="../wait/#frames">Wait.frames(...)</a> used 3 times. It waits a set number of frames and then activates a given function:</p>
 <div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nf">onLoad</span><span class="p">()</span>
     <span class="c1">--Built-in functions with parameters can be called directly</span>
     <span class="c1">--This is done by wrapping the function within `function()` and `end`</span>
