@@ -38,7 +38,7 @@ markdown_extensions:
       permalink: "\u0020"
 
 repo_name: 'GitHub Source'
-repo_url: 'https://github.com/Berserk-Games/Tabletop-Simulator-API'
+repo_url: 'https://github.com/tts-community/Tabletop-Simulator-API'
 
 
 extra:
@@ -84,8 +84,8 @@ pages:
     - TextTool: texttool.md
     - Time: time.md
     - Turns: turns.md
-    - Vector: vector.md
     - UI: ui.md
+    - Vector: vector.md
     - Wait: wait.md
     - Web Request: webrequest.md
   - UI API:
