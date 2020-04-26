@@ -1,4 +1,4 @@
-boundaryAs mentioned in the [Introduction](../introUI/), attributes are modifiers that can be applied to elements. They can be applied to individual elements or to whole groups of them.
+boundaryAs mentioned in the [Introduction](introUI.md), attributes are modifiers that can be applied to elements. They can be applied to individual elements or to whole groups of them.
 
 !!!important
     They consists of two parts, a **tag** and a **value**. ***The value is always in quotation marks.***
@@ -30,7 +30,7 @@ Elements all share some common attributes which are not repeated under their sep
 Attribute&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Type&nbsp;/&nbsp;Options&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Default&nbsp;Value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 -- | -- | -- | --
 active | Specifies whether or not this element is active. This can be used to hide/show elements via scripting. Triggering this via script will not trigger animations. | bool | `true`
-class | This allows you to group elements together by giving them the same class. It is used with [Defaults](../defaults/). | string | (none)
+class | This allows you to group elements together by giving them the same class. It is used with [Defaults](defaults.md). | string | (none)
 id | Used by Lua scripting to identify an element within the XML. | string | (none)
 isDropReceiver | Determine if an object triggers onElementDropped. | bool | false
 visibility | What colors are able to see the element. See below for additional details. | string | (visible to all)
@@ -44,8 +44,8 @@ Not using the visibility attribute (or setting it to an empty string) does not l
 #####Visiblity Selection
 * `Host`:  Only visible to the game host.
 * `Admin`: Only visible to the host and any promoted player.
-* `Red`: Only visible to the player in that seat color. (Works with all valid [color names](../../player-color/))
-* `Clubs`: Only visible to members of that player group. (Works with all valid [team names](../../player/#team))
+* `Red`: Only visible to the player in that seat color. (Works with all valid [color names](../player-color.md))
+* `Clubs`: Only visible to members of that player group. (Works with all valid [team names](../player.md#team))
 
 #####Combining Groups
 You are able to list multiple color names in a single string by placing a vertical line `|` between valid entries.
@@ -166,7 +166,7 @@ tooltipBackgroundImage | This attribute allows you to override the default image
 tooltipOffset | This attribute allows you to modify the distance this tooltip will appear from the element. | float |
 
 ###Event Attributes
-Allows Lua scripting events to be triggered by any element, through a variety of interactions. See the [Input Elements](../inputelements/) page for how to interact with Lua scripting.
+Allows Lua scripting events to be triggered by any element, through a variety of interactions. See the [Input Elements](inputelements.md) page for how to interact with Lua scripting.
 
 Attribute&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Type&nbsp;/&nbsp;Options&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Default&nbsp;Value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 -- | -- | -- | --
