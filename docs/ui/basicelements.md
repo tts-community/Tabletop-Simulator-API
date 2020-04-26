@@ -1,6 +1,6 @@
 These are display-type elements for the UI. They cannot send information to any Lua scripts.
 
-Each element has its own attributes specific to its type that work in addition to the [common attributes](attributes#common-attributes).
+Each element has its own attributes specific to its type that work in addition to the [common attributes](../attributes/#common-attributes).
 
 ##Element Summary
 
