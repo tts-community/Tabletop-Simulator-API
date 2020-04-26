@@ -84,8 +84,8 @@ pages:
     - TextTool: texttool.md
     - Time: time.md
     - Turns: turns.md
-    - Vector: vector.md
     - UI: ui.md
+    - Vector: vector.md
     - Wait: wait.md
     - Web Request: webrequest.md
   - UI API:
