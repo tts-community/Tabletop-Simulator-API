@@ -10,4 +10,3 @@ Variable | Description | Type
 -- | -- | :--
 <a class="anchor" id="url"></a>url | URL which currently wants to display. | [<span class="tag str"></span>](types.md)
 <a class="anchor" id="pixel_width"></a>pixel_width | The pixel width the browser is virtually rendering to. | [<span class="tag str"></span>](types.md)
----
