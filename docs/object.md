@@ -16,6 +16,7 @@ Variable | Description | Type
 <a class="anchor" id="angular_drag"></a>angular_drag | Angular drag. [Unity rigidbody property](https://docs.unity3d.com/Manual/class-Rigidbody.html). | [<span class="tag flo"></span>](types.md) <a class="anchor" id="angular_drag"></a>
 <a class="anchor" id="auto_raise"></a>auto_raise | If an object should be lifted above other objects to avoid collision when held by a player. | [<span class="tag boo"></span>](types.md)
 <a class="anchor" id="bounciness"></a>bounciness | Bounciness, value of 0-1. [Unity physics material](https://docs.unity3d.com/Manual/class-PhysicMaterial.html). | [<span class="tag flo"></span>](types.md)
+<a class="anchor" id="drag"></a>drag_selectable | Drag Selectable toggle of object. | [<span class="tag boo"></span>](types.md)
 <a class="anchor" id="drag"></a>drag | Drag. [Unity rigidbody property](https://docs.unity3d.com/Manual/class-Rigidbody.html). | [<span class="tag flo"></span>](types.md)
 <a class="anchor" id="dynamic_friction"></a>dynamic_friction | Dynamic friction, value of 0-1. [Unity physics material](https://docs.unity3d.com/Manual/class-PhysicMaterial.html). | [<span class="tag flo"></span>](types.md)
 <a class="anchor" id="grid_projection"></a>grid_projection | If grid lines can appear on the Object if visible grids are turned on. | [<span class="tag boo"></span>](types.md)
@@ -41,12 +42,18 @@ Variable | Description | Type
 <a class="anchor" id="use_hands"></a>use_hands | If this object can be held in a hand zone. | [<span class="tag boo"></span>](types.md)
 <a class="anchor" id="use_rotation_value_flip"></a>use_rotation_value_flip | Switches the axis an Object rotates around when flipped. | [<span class="tag boo"></span>](types.md)
 <a class="anchor" id="use_snap_points"></a>use_snap_points | If snap points are used or ignored. | [<span class="tag boo"></span>](types.md)
+<a class="anchor" id="value_flags"></a>value_flags | A bit field, objects with overlapping `value_flag` bits are counted together when selected. | [<span class="tag int"></span>](types.md)
+<a class="anchor" id="value"></a>value | The value of the object for summing up selected objects. Only works if the apropriate bits are set in `obj.value_flags` | [<span class="tag int"></span>](types.md)
+
+!!! bug
+    the `drag_selectable`, `value_flags` and `value` member variables do not persist when the object is reloaded (such as loading a save and entering/exiting containers)
 
 These member variables are classes of their own, and have their own member variables. Each one is for a special type of Object.
 
 Variable Name | Description
 -- | --
 <a class="anchor" id="assetbundle"></a>AssetBundle | An [AssetBundle](assetbundle.md), which is a type of custom object made in Unity.
+<a class="anchor" id="browser"></a>Browser | A [Browser](browser.md), which is the in-game Tablet object.
 <a class="anchor" id="clock"></a>Clock | A [Clock](clock.md), which is the in-game digital clock.
 <a class="anchor" id="counter"></a>Counter | A [Counter](counter.md), which is the in-game digital counter.
 <a class="anchor" id="rpgfigurine"></a>RPGFigurine | An [RPGFigurine](rpgfigurine.md), which is an in-game animated figurine.

@@ -69,6 +69,7 @@ pages:
     - Base: base.md
     - Object: object.md
     - AssetBundle: assetbundle.md
+    - Browser: browser.md
     - Clock: clock.md
     - Color: color.md
     - Component: component.md
