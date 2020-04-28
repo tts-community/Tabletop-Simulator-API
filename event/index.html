@@ -895,6 +895,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#onobjectcollisionenter" title="onObjectCollisionEnter(...)" class="md-nav__link">
+    onObjectCollisionEnter(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onobjectcollisionexit" title="onObjectCollisionExit(...)" class="md-nav__link">
+    onObjectCollisionExit(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onobjectcollisionstay" title="onObjectCollisionStay(...)" class="md-nav__link">
+    onObjectCollisionStay(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#onobjectdestroy" title="onObjectDestroy(...)" class="md-nav__link">
     onObjectDestroy(...)
   </a>
@@ -2451,6 +2472,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#onobjectcollisionenter" title="onObjectCollisionEnter(...)" class="md-nav__link">
+    onObjectCollisionEnter(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onobjectcollisionexit" title="onObjectCollisionExit(...)" class="md-nav__link">
+    onObjectCollisionExit(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onobjectcollisionstay" title="onObjectCollisionStay(...)" class="md-nav__link">
+    onObjectCollisionStay(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#onobjectdestroy" title="onObjectDestroy(...)" class="md-nav__link">
     onObjectDestroy(...)
   </a>
@@ -2760,6 +2802,21 @@
 <td><a href="#onload"><span class="i"></span></a></td>
 </tr>
 <tr>
+<td>onObjectCollisionEnter(<a href="../types/"><span class="tag obj"></span></a>&nbsp;registered_object, <a href="../types/"><span class="tag tab"></span></a>&nbsp;collision_info)</td>
+<td>Called when an Object starts colliding with a <a href="../object/#registercollisions">collision registered</a> Object.</td>
+<td><a href="#onobjectcollisionenter"><span class="i"></span></a></td>
+</tr>
+<tr>
+<td>onObjectCollisionExit(<a href="../types/"><span class="tag obj"></span></a>&nbsp;registered_object, <a href="../types/"><span class="tag tab"></span></a>&nbsp;collision_info)</td>
+<td>Called when an Object stops colliding with a <a href="../object/#registercollisions">collision registered</a> Object.</td>
+<td><a href="#onobjectcollisionexit"><span class="i"></span></a></td>
+</tr>
+<tr>
+<td>onObjectCollisionStay(<a href="../types/"><span class="tag obj"></span></a>&nbsp;registered_object, <a href="../types/"><span class="tag tab"></span></a>&nbsp;collision_info)</td>
+<td>Called <strong>every frame</strong> that an Object is colliding with a <a href="../object/#registercollisions">collision registered</a> Object.</td>
+<td><a href="#onobjectcollisionstay"><span class="i"></span></a></td>
+</tr>
+<tr>
 <td>onObjectDestroy(<a href="../types/"><span class="tag obj"></span></a>&nbsp;dying_object)</td>
 <td>Called whenever any object is destroyed.</td>
 <td><a href="#onobjectdestroy"><span class="i"></span></a></td>
@@ -3019,6 +3076,97 @@
 </pre></div>
 
 </details>
+<hr />
+<h3 id="onobjectcollisionenter">onObjectCollisionEnter(...)<a class="headerlink" href="#onobjectcollisionenter" title="Permanent link"> </a></h3>
+<p>This function is called when an Object starts colliding with a <a href="../object/#registercollisions">collision registered</a> Object.</p>
+<div class="admonition info">
+<p class="admonition-title">onObjectCollisionEnter(registered_object, collision_info)</p>
+<ul>
+<li><a href="../types/"><span class="tag obj"></span></a>&nbsp;<strong>registered_object</strong>: The object registered to receive collision events.</li>
+<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info</strong>: A table containing data about the collision.<ul>
+<li><a href="../types/"><span class="tag obj"></span></a>&nbsp;<strong>collision_info.<em>collision_object</em></strong>: Object coming into contact with <code class="codehilite">registered_object</code>.</li>
+<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info.<em>contact_points</em></strong>: Table/array full of contact points, where each 3D point is represented by a (number indexed) table, <em>not</em> a <a href="../vector/">Vector</a>.</li>
+<li><a href="../types/"><span class="tag tab"></span></a> <strong>collision_info.<em>relative_velocity</em></strong>: Table (number indexed) representation of a 3D vector (but <em>not</em> a <a href="../vector/">Vector</a>) indicating the direction and magnitude of the collision.</li>
+</ul>
+</li>
+</ul>
+</div>
+<p><div class="codehilite"><pre><span></span><span class="c1">-- Example Usage</span>
+<span class="kr">function</span> <span class="nf">onObjectCollisionEnter</span><span class="p">(</span><span class="n">registered_object</span><span class="p">,</span> <span class="n">info</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">tostring</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">collision_object</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&quot; collided with &quot;</span> <span class="o">..</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">object</span><span class="p">))</span>
+<span class="kr">end</span>
+</pre></div>
+<div class="codehilite"><pre><span></span><span class="c1">-- Example collision_info table</span>
+<span class="p">{</span>
+    <span class="n">collision_object</span> <span class="o">=</span> <span class="n">objectReference</span><span class="p">,</span>
+    <span class="n">contact_points</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">}</span>
+    <span class="p">},</span>
+    <span class="n">relative_velocity</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div></p>
+<hr />
+<h3 id="onobjectcollisionexit">onObjectCollisionExit(...)<a class="headerlink" href="#onobjectcollisionexit" title="Permanent link"> </a></h3>
+<p>This function is called when an Object stops colliding with a <a href="../object/#registercollisions">collision registered</a> Object.</p>
+<div class="admonition info">
+<p class="admonition-title">onObjectCollisionExit(registered_object, collision_info)</p>
+<ul>
+<li><a href="../types/"><span class="tag obj"></span></a>&nbsp;<strong>registered_object</strong>: The object registered to receive collision events.</li>
+<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info</strong>: A table containing data about the collision.<ul>
+<li><a href="../types/"><span class="tag obj"></span></a>&nbsp;<strong>collision_info.<em>collision_object</em></strong>: Object leaving contact with <code class="codehilite">registered_object</code>.</li>
+<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info.<em>contact_points</em></strong>: Table/array full of contact points, where each 3D point is represented by a (number indexed) table, <em>not</em> a <a href="../vector/">Vector</a>.</li>
+<li><a href="../types/"><span class="tag tab"></span></a> <strong>collision_info.<em>relative_velocity</em></strong>: Table (number indexed) representation of a 3D vector (but <em>not</em> a <a href="../vector/">Vector</a>) indicating the velocity of the object that has moved out of contact.</li>
+</ul>
+</li>
+</ul>
+</div>
+<p><div class="codehilite"><pre><span></span><span class="c1">-- Example Usage</span>
+<span class="kr">function</span> <span class="nf">onObjectCollisionExit</span><span class="p">(</span><span class="n">registered_object</span><span class="p">,</span> <span class="n">info</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">tostring</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">collision_object</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&quot; stopped colliding with &quot;</span> <span class="o">..</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">object</span><span class="p">))</span>
+<span class="kr">end</span>
+</pre></div>
+<div class="codehilite"><pre><span></span><span class="c1">-- Example collision_info table</span>
+<span class="p">{</span>
+    <span class="n">collision_object</span> <span class="o">=</span> <span class="n">objectReference</span><span class="p">,</span>
+    <span class="n">contact_points</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">}</span>
+    <span class="p">},</span>
+    <span class="n">relative_velocity</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div></p>
+<hr />
+<h3 id="onobjectcollisionstay">onObjectCollisionStay(...)<a class="headerlink" href="#onobjectcollisionstay" title="Permanent link"> </a></h3>
+<p>This function is called <strong>every frame</strong> that an Object is colliding with a <a href="../object/#registercollisions">collision registered</a> Object.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This is a very expensive function and can easily slow/crash your game if misused. Use with caution.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">onObjectCollisionStay(registered_object, collision_info)</p>
+<ul>
+<li><a href="../types/"><span class="tag obj"></span></a>&nbsp;<strong>registered_object</strong>: The object registered to receive collision events.</li>
+<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info</strong>: A table containing data about the collision.<ul>
+<li><a href="../types/"><span class="tag obj"></span></a>&nbsp;<strong>collision_info.<em>collision_object</em></strong>: Object coming into contact with <code class="codehilite">registered_object</code>.</li>
+<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info.<em>contact_points</em></strong>: Table/array full of contact points, where each 3D point is represented by a (number indexed) table, <em>not</em> a <a href="../vector/">Vector</a>.</li>
+<li><a href="../types/"><span class="tag tab"></span></a> <strong>collision_info.<em>relative_velocity</em></strong>: Table (number indexed) representation of a 3D vector (but <em>not</em> a <a href="../vector/">Vector</a>) indicating the direction and magnitude of the collision.</li>
+</ul>
+</li>
+</ul>
+</div>
+<p><div class="codehilite"><pre><span></span><span class="c1">-- Example Usage</span>
+<span class="kr">function</span> <span class="nf">onObjectCollisionStay</span><span class="p">(</span><span class="n">registered_object</span><span class="p">,</span> <span class="n">info</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">tostring</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">collision_object</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&quot; still colliding with &quot;</span> <span class="o">..</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">object</span><span class="p">))</span>
+<span class="kr">end</span>
+</pre></div>
+<div class="codehilite"><pre><span></span><span class="c1">-- Example collision_info table</span>
+<span class="p">{</span>
+    <span class="n">collision_object</span> <span class="o">=</span> <span class="n">objectReference</span><span class="p">,</span>
+    <span class="n">contact_points</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">}</span>
+    <span class="p">},</span>
+    <span class="n">relative_velocity</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div></p>
 <hr />
 <h3 id="onobjectdestroy">onObjectDestroy(...)<a class="headerlink" href="#onobjectdestroy" title="Permanent link"> </a></h3>
 <p>Called whenever any object is destroyed. The dying Object has 1 frame left to live. This event fires immediately before the dying Object’s <code class="codehilite">onDestroy()</code> but their lifetime is the same final frame.</p>
@@ -3335,26 +3483,26 @@
 <div class="admonition info">
 <p class="admonition-title">onCollisionEnter(collision_info)</p>
 <ul>
-<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info</strong>: A Table containing data on colliding object.<ul>
+<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info</strong>: A table containing data about the collision.<ul>
 <li><a href="../types/"><span class="tag obj"></span></a>&nbsp;<strong>collision_info.<em>collision_object</em></strong>: Object coming into contact with <code class="codehilite">self</code>.</li>
-<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info.<em>contact_points</em></strong>: Sub-table full of the Vectors where contact took place.</li>
-<li><a href="../types/#vector"><span class="tag vec"></span></a> <strong>collision_info.<em>relative_velocity</em></strong>: Direction and magnitude at the time of collision.</li>
+<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info.<em>contact_points</em></strong>: Table/array full of contact points, where each 3D point is represented by a (number indexed) table, <em>not</em> a <a href="../vector/">Vector</a>.</li>
+<li><a href="../types/"><span class="tag tab"></span></a> <strong>collision_info.<em>relative_velocity</em></strong>: Table (number indexed) representation of a 3D vector (but <em>not</em> a <a href="../vector/">Vector</a>) indicating the direction and magnitude of the collision.</li>
 </ul>
 </li>
 </ul>
 </div>
 <p><div class="codehilite"><pre><span></span><span class="c1">-- Example Usage</span>
 <span class="kr">function</span> <span class="nf">onCollisionEnter</span><span class="p">(</span><span class="n">info</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">collision_object</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">tostring</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">collision_object</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&quot; collided with &quot;</span> <span class="o">..</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">self</span><span class="p">))</span>
 <span class="kr">end</span>
 </pre></div>
-<div class="codehilite"><pre><span></span><span class="c1">-- Example returned table</span>
+<div class="codehilite"><pre><span></span><span class="c1">-- Example collision_info table</span>
 <span class="p">{</span>
-    <span class="n">collision_object</span> <span class="o">=</span> <span class="n">objectReference</span>
+    <span class="n">collision_object</span> <span class="o">=</span> <span class="n">objectReference</span><span class="p">,</span>
     <span class="n">contact_points</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="p">{</span><span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">z</span><span class="o">=-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">},</span>
-    <span class="p">}</span>
-    <span class="n">relative_velocity</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">}</span>
+        <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">}</span>
+    <span class="p">},</span>
+    <span class="n">relative_velocity</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div></p>
 <hr />
@@ -3363,26 +3511,26 @@
 <div class="admonition info">
 <p class="admonition-title">onCollisionExit(collision_info)</p>
 <ul>
-<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info</strong>: A Table containing data on colliding object.<ul>
+<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info</strong>: A table containing data about the collision.<ul>
 <li><a href="../types/"><span class="tag obj"></span></a>&nbsp;<strong>collision_info.<em>collision_object</em></strong>: Object leaving contact with <code class="codehilite">self</code>.</li>
-<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info.<em>contact_points</em></strong>: Sub-table full of the Vectors where contact last broke off.</li>
-<li><a href="../types/#vector"><span class="tag vec"></span></a> <strong>collision_info.<em>relative_velocity</em></strong>: Direction and magnitude of the departing Object.</li>
+<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info.<em>contact_points</em></strong>: Table/array full of contact points, where each 3D point is represented by a (number indexed) table, <em>not</em> a <a href="../vector/">Vector</a>.</li>
+<li><a href="../types/"><span class="tag tab"></span></a> <strong>collision_info.<em>relative_velocity</em></strong>: Table (number indexed) representation of a 3D vector (but <em>not</em> a <a href="../vector/">Vector</a>) indicating the velocity of the object that has moved out of contact.</li>
 </ul>
 </li>
 </ul>
 </div>
 <p><div class="codehilite"><pre><span></span><span class="c1">-- Example Usage</span>
 <span class="kr">function</span> <span class="nf">onCollisionExit</span><span class="p">(</span><span class="n">info</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">collision_object</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">tostring</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">collision_object</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&quot; stopped colliding with &quot;</span> <span class="o">..</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">self</span><span class="p">))</span>
 <span class="kr">end</span>
 </pre></div>
-<div class="codehilite"><pre><span></span><span class="c1">-- Example returned table</span>
+<div class="codehilite"><pre><span></span><span class="c1">-- Example collision_info table</span>
 <span class="p">{</span>
-    <span class="n">collision_object</span> <span class="o">=</span> <span class="n">objectReference</span>
+    <span class="n">collision_object</span> <span class="o">=</span> <span class="n">objectReference</span><span class="p">,</span>
     <span class="n">contact_points</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="p">{</span><span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">z</span><span class="o">=-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">},</span>
-    <span class="p">}</span>
-    <span class="n">relative_velocity</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">}</span>
+        <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">}</span>
+    <span class="p">},</span>
+    <span class="n">relative_velocity</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div></p>
 <hr />
@@ -3393,28 +3541,28 @@
 <p>This is a very expensive function and can easily slow/crash your game if misused. Use with caution.</p>
 </div>
 <div class="admonition info">
-<p class="admonition-title">onCollisionExit(collision_info)</p>
+<p class="admonition-title">onCollisionStay(collision_info)</p>
 <ul>
-<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info</strong>: A Table containing data on colliding object.<ul>
+<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info</strong>: A table containing data about the collision.<ul>
 <li><a href="../types/"><span class="tag obj"></span></a>&nbsp;<strong>collision_info.<em>collision_object</em></strong>: Object coming into contact with <code class="codehilite">self</code>.</li>
-<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info.<em>contact_points</em></strong>: Sub-table full of the Vectors where contact is taking place.</li>
-<li><a href="../types/#vector"><span class="tag vec"></span></a> <strong>collision_info.<em>relative_velocity</em></strong>: Direction and magnitude of the Object, currently.</li>
+<li><a href="../types/"><span class="tag tab"></span></a>&nbsp;<strong>collision_info.<em>contact_points</em></strong>: Table/array full of contact points, where each 3D point is represented by a (number indexed) table, <em>not</em> a <a href="../vector/">Vector</a>.</li>
+<li><a href="../types/"><span class="tag tab"></span></a> <strong>collision_info.<em>relative_velocity</em></strong>: Table (number indexed) representation of a 3D vector (but <em>not</em> a <a href="../vector/">Vector</a>) indicating the direction and magnitude of the collision.</li>
 </ul>
 </li>
 </ul>
 </div>
 <p><div class="codehilite"><pre><span></span><span class="c1">-- Example Usage</span>
 <span class="kr">function</span> <span class="nf">onCollisionStay</span><span class="p">(</span><span class="n">info</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">collision_object</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">tostring</span><span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">collision_object</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&quot; still colliding with &quot;</span> <span class="o">..</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">self</span><span class="p">))</span>
 <span class="kr">end</span>
 </pre></div>
-<div class="codehilite"><pre><span></span><span class="c1">-- Example returned table</span>
+<div class="codehilite"><pre><span></span><span class="c1">-- Example collision_info table</span>
 <span class="p">{</span>
-    <span class="n">collision_object</span> <span class="o">=</span> <span class="n">objectReference</span>
+    <span class="n">collision_object</span> <span class="o">=</span> <span class="n">objectReference</span><span class="p">,</span>
     <span class="n">contact_points</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="p">{</span><span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">z</span><span class="o">=-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">},</span>
-    <span class="p">}</span>
-    <span class="n">relative_velocity</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">}</span>
+        <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">}</span>
+    <span class="p">},</span>
+    <span class="n">relative_velocity</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div></p>
 <hr />

@@ -1358,6 +1358,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#registercollisions" title="registerCollisions(...)" class="md-nav__link">
+    registerCollisions(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#reload" title="reload()" class="md-nav__link">
     reload()
   </a>
@@ -1374,6 +1381,13 @@
           <li class="md-nav__item">
   <a href="#takeobject" title="takeObject(...)" class="md-nav__link">
     takeObject(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unregistercollisions" title="unregisterCollisions(...)" class="md-nav__link">
+    unregisterCollisions(...)
   </a>
   
 </li>
@@ -3110,6 +3124,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#registercollisions" title="registerCollisions(...)" class="md-nav__link">
+    registerCollisions(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#reload" title="reload()" class="md-nav__link">
     reload()
   </a>
@@ -3126,6 +3147,13 @@
           <li class="md-nav__item">
   <a href="#takeobject" title="takeObject(...)" class="md-nav__link">
     takeObject(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unregistercollisions" title="unregisterCollisions(...)" class="md-nav__link">
+    unregisterCollisions(...)
   </a>
   
 </li>
@@ -3963,6 +3991,12 @@
 <td></td>
 </tr>
 <tr>
+<td>registerCollisions(<a href="../types/"><span class="tag boo"></span></a>&nbsp;stay)</td>
+<td>Registers this object for Global collision events.</td>
+<td><a href="../types/"><span class="ret boo"></span></a></td>
+<td><a href="#registercollisions"><span class="i"></span></a></td>
+</tr>
+<tr>
 <td>reload()</td>
 <td>Returns Object reference of itself after it respawns itself.</td>
 <td><a href="../types/"><span class="ret obj"></span></a></td>
@@ -4003,6 +4037,12 @@
 <td>Returns an Object reference of Object taken from a container (bag/deck/chip stack) and placed into the world.</td>
 <td><a href="../types/"><span class="ret obj"></span></a></td>
 <td><a href="#takeobject"><span class="i"></span></a></td>
+</tr>
+<tr>
+<td>unregisterCollisions()</td>
+<td>Unregisters this object for Global collision events.</td>
+<td><a href="../types/"><span class="ret boo"></span></a></td>
+<td><a href="#unregistercollisions"><span class="i"></span></a></td>
 </tr>
 </tbody>
 </table>
@@ -5208,6 +5248,18 @@
 </pre></div>
 
 <hr />
+<h4 id="registercollisions">registerCollisions(...)<a class="headerlink" href="#registercollisions" title="Permanent link"> </a></h4>
+<p><a href="../types/"><span class="ret boo"></span></a>&nbsp;Registers this object for Global collision events, such as <a href="../event/#onobjectcollisionenter">onObjectCollisionEnter</a>. Always returns <code class="codehilite">true</code>.</p>
+<div class="admonition info">
+<p class="admonition-title">registerCollision(stay)</p>
+<ul>
+<li><a href="../types/"><span class="tag boo"></span></a> <strong>stay</strong>: Whether we should register for <a href="../event/#onobjectcollisionstay">onObjectCollisionStay</a>. Stay events may negatively impact performance, only set this to <code class="codehilite">true</code> if absolutely necessary.<ul>
+<li><span class="critic comment">Optional, defaults to `false`.</span></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
 <h4 id="reload">reload()<a class="headerlink" href="#reload" title="Permanent link"> </a></h4>
 <p><a href="../types/"><span class="ret obj"></span></a>&nbsp;Returns Object reference of itself after it respawns itself. This function causes the Object to be deleted and respawned instantly to refresh it, so its old Object reference will no longer be valid.</p>
 <p>Most often this is used after using <a href="#setcustomobject">setCustomObject(...)</a> to modify a custom object.</p>
@@ -5317,6 +5369,12 @@
 </details>
 <details class="tip"><summary>Tip for using index to pull Object</summary><p>When you take an Object from the container, all higher indexes are reduced by 1 instantly. If you pull more than once Object at once by their index, you must account for this index changing.</p>
 </details>
+<hr />
+<h4 id="unregistercollisions">unregisterCollisions(...)<a class="headerlink" href="#unregistercollisions" title="Permanent link"> </a></h4>
+<p><a href="../types/"><span class="ret boo"></span></a>&nbsp;Unregisters this object for Global collision events. Returns <code class="codehilite">true</code> if the object was previously registered, <code class="codehilite">false</code> otherwise.</p>
+<div class="admonition info">
+<p class="admonition-title">unregisterCollision()</p>
+</div>
 <hr />
 <h3 id="hide-function-details">Hide Function Details<a class="headerlink" href="#hide-function-details" title="Permanent link"> </a></h3>
 <h4 id="sethiddenfrom">setHiddenFrom(...)<a class="headerlink" href="#sethiddenfrom" title="Permanent link"> </a></h4>
