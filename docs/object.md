@@ -53,6 +53,7 @@ These member variables are classes of their own, and have their own member varia
 Variable Name | Description
 -- | --
 <a class="anchor" id="assetbundle"></a>AssetBundle | An [AssetBundle](assetbundle.md), which is a type of custom object made in Unity.
+<a class="anchor" id="book"></a>Book | A [Book](book.md), which is the in-game Custom PDF object.
 <a class="anchor" id="browser"></a>Browser | A [Browser](browser.md), which is the in-game Tablet object.
 <a class="anchor" id="clock"></a>Clock | A [Clock](clock.md), which is the in-game digital clock.
 <a class="anchor" id="counter"></a>Counter | A [Counter](counter.md), which is the in-game digital counter.

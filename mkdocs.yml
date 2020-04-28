@@ -81,6 +81,7 @@ pages:
     - Spawnable Objects:
       - Spawnable Objects: spawnableobjects.md
       - AssetBundle: assetbundle.md
+      - Book: book.md
       - Browser: browser.md
       - Clock: clock.md
       - RPGFigurine: rpgfigurine.md
