@@ -2635,39 +2635,39 @@ When constructing Color instances, the <code class="codehilite"><span class="na"
 </thead>
 <tbody>
 <tr>
-<td>Color(<a href="/types"><span class="tag flo"></span></a>&nbsp;r, <a href="/types"><span class="tag flo"></span></a>&nbsp;g, <a href="/types"><span class="tag flo"></span></a>&nbsp;b)</td>
+<td>Color(<a href="../types/"><span class="tag flo"></span></a>&nbsp;r, <a href="../types/"><span class="tag flo"></span></a>&nbsp;g, <a href="../types/"><span class="tag flo"></span></a>&nbsp;b)</td>
 <td>Return a color with specified (r, g, b) components.</td>
-<td><a href="/types"><span class="ret col"></span></a></td>
+<td><a href="../types/"><span class="ret col"></span></a></td>
 <td align="right"><a href="#colornew"><span class="i"></span></a></td>
 </tr>
 <tr>
-<td>Color(<a href="/types"><span class="tag flo"></span></a>&nbsp;r, <a href="/types"><span class="tag flo"></span></a>&nbsp;g, <a href="/types"><span class="tag flo"></span></a>&nbsp;b, <a href="/types"><span class="tag flo"></span></a>&nbsp;a)</td>
+<td>Color(<a href="../types/"><span class="tag flo"></span></a>&nbsp;r, <a href="../types/"><span class="tag flo"></span></a>&nbsp;g, <a href="../types/"><span class="tag flo"></span></a>&nbsp;b, <a href="../types/"><span class="tag flo"></span></a>&nbsp;a)</td>
 <td>Return a color with specified (r, g, b, a) components.</td>
-<td><a href="/types"><span class="ret col"></span></a></td>
+<td><a href="../types/"><span class="ret col"></span></a></td>
 <td align="right"><a href="#colornew"><span class="i"></span></a></td>
 </tr>
 <tr>
-<td>Color(<a href="/types"><span class="tag tab"></span></a>&nbsp;t)</td>
+<td>Color(<a href="../types/"><span class="tag tab"></span></a>&nbsp;t)</td>
 <td>Return a color with r&#47;g&#47;b&#47;a <!-- (Not work in 12.3.5) or 1&#47;2&#47;3&#47;4 --> components from source table<!-- (r&#47;g&#47;b&#47;a first)-->.</td>
-<td><a href="/types"><span class="ret col"></span></a></td>
+<td><a href="../types/"><span class="ret col"></span></a></td>
 <td align="right"><a href="#colornew"><span class="i"></span></a></td>
 </tr>
 <tr>
 <td>Color.new(...)</td>
 <td>Same as Color(...).</td>
-<td><a href="/types"><span class="ret col"></span></a></td>
+<td><a href="../types/"><span class="ret col"></span></a></td>
 <td align="right"><a href="#colornew"><span class="i"></span></a></td>
 </tr>
 <tr>
-<td>Color.fromString(<a href="/types"><span class="tag str"></span></a>&nbsp;colorStr)</td>
+<td>Color.fromString(<a href="../types/"><span class="tag str"></span></a>&nbsp;colorStr)</td>
 <td>Return a color from a color string ('Red', 'Green' etc), capitalization ignored.</td>
-<td><a href="/types"><span class="ret col"></span></a></td>
+<td><a href="../types/"><span class="ret col"></span></a></td>
 <td align="right"><a href="#colorfromstring"><span class="i"></span></a></td>
 </tr>
 <tr>
 <td>Color.Blue</td>
 <td>Shorthand for Color.fromString('Blue'), works for all <a href="../player-color/">Player</a> and <a href="#coloradd">added colors</a>, capitalization ignored. Also return the color name.</td>
-<td><a href="/types"><span class="ret col"></span></a><a href="/types"><span class="ret str"></span></a></td>
+<td><a href="../types/"><span class="ret col"></span></a><a href="../types/"><span class="ret str"></span></a></td>
 <td align="right"><a href="#colorblue"><span class="i"></span></a></td>
 </tr>
 </tbody>
@@ -2675,7 +2675,7 @@ When constructing Color instances, the <code class="codehilite"><span class="na"
 <!--
 This function exist but in version 12.3.5 she is not working.
 
-Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a color from a hex representation string ('#ff112233', 'ff1122'), hash sign and alpha are optional. | [<span class="ret col"></span>](/types)
+Color.fromHex([<span class="tag str"></span>](types.md)&nbsp;hexStr) | Return a color from a hex representation string ('#ff112233', 'ff1122'), hash sign and alpha are optional. | [<span class="ret col"></span>](types.md)
 -->
 
 <h3 id="constructors-examples">Constructors examples<a class="headerlink" href="#constructors-examples" title="Permanent link"> </a></h3>
@@ -2702,27 +2702,27 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 </thead>
 <tbody>
 <tr>
-<td>setAt(<a href="/types"><span class="tag str"></span></a>&nbsp;k, <a href="/types"><span class="tag flo"></span></a>&nbsp;value)</td>
+<td>setAt(<a href="../types/"><span class="tag str"></span></a>&nbsp;k, <a href="../types/"><span class="tag flo"></span></a>&nbsp;value)</td>
 <td>Sets a component to value and returns self.</td>
-<td><a href="/types#vector"><span class="ret sel"></span></a></td>
+<td><a href="../types/#vector"><span class="ret sel"></span></a></td>
 <td><a href="#setat"><span class="i"></span></a></td>
 </tr>
 <tr>
-<td>set(<a href="/types"><span class="tag flo"></span></a>&nbsp;r, <a href="/types"><span class="tag flo"></span></a>&nbsp;g, <a href="/types"><span class="tag flo"></span></a>&nbsp;b, <a href="/types"><span class="tag flo"></span></a>&nbsp;a)</td>
+<td>set(<a href="../types/"><span class="tag flo"></span></a>&nbsp;r, <a href="../types/"><span class="tag flo"></span></a>&nbsp;g, <a href="../types/"><span class="tag flo"></span></a>&nbsp;b, <a href="../types/"><span class="tag flo"></span></a>&nbsp;a)</td>
 <td>Sets <code class="codehilite">r</code>, <code class="codehilite">g</code>, <code class="codehilite">b</code>, <code class="codehilite">a</code> components to given values and returns self, alpha is optional</td>
-<td><a href="/types#vector"><span class="ret sel"></span></a></td>
+<td><a href="../types/#vector"><span class="ret sel"></span></a></td>
 <td><a href="#set"><span class="i"></span></a></td>
 </tr>
 <tr>
 <td>get()</td>
 <td>Returns <code class="codehilite">r</code>, <code class="codehilite">g</code>, <code class="codehilite">b</code>, <code class="codehilite">a</code> components as four separate values.</td>
-<td><a href="/types"><span class="ret flo"></span></a><br><a href="/types"><span class="ret flo"></span></a><br><a href="/types"><span class="ret flo"></span></a><br><a href="/types"><span class="ret flo"></span></a></td>
+<td><a href="../types/"><span class="ret flo"></span></a><br><a href="../types/"><span class="ret flo"></span></a><br><a href="../types/"><span class="ret flo"></span></a><br><a href="../types/"><span class="ret flo"></span></a></td>
 <td><a href="#get"><span class="i"></span></a></td>
 </tr>
 <tr>
 <td>copy()</td>
 <td>Returns a separate Color with identical component values.</td>
-<td><a href="/types#vector"><span class="ret col"></span></a></td>
+<td><a href="../types/#vector"><span class="ret col"></span></a></td>
 <td><a href="#copy"><span class="i"></span></a></td>
 </tr>
 </tbody>
@@ -2763,15 +2763,15 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 </thead>
 <tbody>
 <tr>
-<td><a href="/types"><span class="tag col"></span></a>&nbsp;one == <a href="/types"><span class="tag col"></span></a>&nbsp;two</td>
+<td><a href="../types/"><span class="tag col"></span></a>&nbsp;one == <a href="../types/"><span class="tag col"></span></a>&nbsp;two</td>
 <td>Return true if both colors identical or within a small margin of each other, false otherwise. See also <a href="#equals">color:equals()</a>.</td>
-<td><a href="/types"><span class="tag boo"></span></a></td>
+<td><a href="../types/"><span class="tag boo"></span></a></td>
 <td></td>
 </tr>
 <tr>
-<td>tostring(<a href="/types"><span class="tag col"></span></a>&nbsp;col)</td>
+<td>tostring(<a href="../types/"><span class="tag col"></span></a>&nbsp;col)</td>
 <td>Return a string description of a color.</td>
-<td><a href="/types"><span class="tag str"></span></a></td>
+<td><a href="../types/"><span class="tag str"></span></a></td>
 <td></td>
 </tr>
 </tbody>
@@ -2803,33 +2803,33 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 </thead>
 <tbody>
 <tr>
-<td>col:toHex(<a href="/types"><span class="tag boo"></span></a>&nbsp;includeAlpha)</td>
+<td>col:toHex(<a href="../types/"><span class="tag boo"></span></a>&nbsp;includeAlpha)</td>
 <td>Returns a hex string for <code class="codehilite">col</code>, boolean parameter <code class="codehilite">includeAlpha</code>.</td>
-<td><a href="/types"><span class="ret str"></span></a></td>
+<td><a href="../types/"><span class="ret str"></span></a></td>
 <td align="right"><a href="#tohex"><span class="i"></span></a></td>
 </tr>
 <tr>
-<td>col:toString(<a href="/types"><span class="tag flo"></span></a>&nbsp;tolerance)</td>
+<td>col:toString(<a href="../types/"><span class="tag flo"></span></a>&nbsp;tolerance)</td>
 <td>Returns a color string if matching this instance, nil otherwise, optional numeric <code class="codehilite">tolerance</code> param.</td>
-<td><a href="/types"><span class="ret str"></span></a></td>
+<td><a href="../types/"><span class="ret str"></span></a></td>
 <td align="right"><a href="#tostring"><span class="i"></span></a></td>
 </tr>
 <tr>
-<td>col:equals(<a href="/types"><span class="tag col"></span></a>&nbsp;otherCol, <a href="/types"><span class="tag flo"></span></a>&nbsp;num)</td>
+<td>col:equals(<a href="../types/"><span class="tag col"></span></a>&nbsp;otherCol, <a href="../types/"><span class="tag flo"></span></a>&nbsp;num)</td>
 <td>Returns true if <code class="codehilite">otherCol</code> same as <code class="codehilite">col</code>, false otherwise, optional numeric tolerance param.</td>
-<td><a href="/types"><span class="ret boo"></span></a></td>
+<td><a href="../types/"><span class="ret boo"></span></a></td>
 <td align="right"><a href="#equals"><span class="i"></span></a></td>
 </tr>
 <tr>
-<td>col:lerp(<a href="/types"><span class="tag col"></span></a>&nbsp;otherCol, <a href="/types"><span class="tag flo"></span></a>&nbsp;num)</td>
+<td>col:lerp(<a href="../types/"><span class="tag col"></span></a>&nbsp;otherCol, <a href="../types/"><span class="tag flo"></span></a>&nbsp;num)</td>
 <td>Return a color some part of the way between <code class="codehilite">col</code> and <code class="codehilite">otherCol</code>, numeric arg [0, 1] is the fraction.</td>
-<td><a href="/types"><span class="ret col"></span></a></td>
+<td><a href="../types/"><span class="ret col"></span></a></td>
 <td align="right"><a href="#lerp"><span class="i"></span></a></td>
 </tr>
 <tr>
-<td>col:dump(<a href="/types"><span class="tag str"></span></a>&nbsp;prefix)</td>
+<td>col:dump(<a href="../types/"><span class="tag str"></span></a>&nbsp;prefix)</td>
 <td>Return a string description of a color with an optional <code class="codehilite">prefix</code>.</td>
-<td><a href="/types"><span class="ret str"></span></a><br><a href="/types"><span class="ret flo"></span></a></td>
+<td><a href="../types/"><span class="ret str"></span></a><br><a href="../types/"><span class="ret flo"></span></a></td>
 <td align="right"><a href="#dump"><span class="i"></span></a></td>
 </tr>
 </tbody>
@@ -2848,13 +2848,13 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 <tr>
 <td>Color.list</td>
 <td>Returns a table of all color strings.</td>
-<td><a href="/types"><span class="ret tab"></span></a></td>
+<td><a href="../types/"><span class="ret tab"></span></a></td>
 <td align="right"><a href="#colorlist"><span class="i"></span></a></td>
 </tr>
 <tr>
-<td>Color.Add(<a href="/types"><span class="tag str"></span></a>&nbsp;name, <a href="/types"><span class="tag col"></span></a>&nbsp;yourColor)</td>
+<td>Color.Add(<a href="../types/"><span class="tag str"></span></a>&nbsp;name, <a href="../types/"><span class="tag col"></span></a>&nbsp;yourColor)</td>
 <td>Add your own color definition to the class.</td>
-<td><a href="/types"><span class="ret nil"></span></a></td>
+<td><a href="../types/"><span class="ret nil"></span></a></td>
 <td align="right"><a href="#coloradd"><span class="i"></span></a></td>
 </tr>
 </tbody>
@@ -2862,28 +2862,28 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 <hr />
 <h2 id="constructors-details">Constructors details<a class="headerlink" href="#constructors-details" title="Permanent link"> </a></h2>
 <h3 id="colornew">Color.new(...)<a class="headerlink" href="#colornew" title="Permanent link"> </a></h3>
-<p><a href="/types"><span class="ret col"></span></a>&nbsp;Return a color with specified components.</p>
+<p><a href="../types/"><span class="ret col"></span></a>&nbsp;Return a color with specified components.</p>
 <div class="admonition info">
 <p class="admonition-title">Color.new(r, g, b)</p>
 <ul>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>r</strong>: Red component between 0 and 1.</li>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>g</strong>: Green component between 0 and 1.</li>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>b</strong>: Blue component between 0 and 1.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>r</strong>: Red component between 0 and 1.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>g</strong>: Green component between 0 and 1.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>b</strong>: Blue component between 0 and 1.</li>
 </ul>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Color.new(r, g, b, a)</p>
 <ul>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>r</strong>: Red component between 0 and 1.</li>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>g</strong>: Green component between 0 and 1.</li>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>b</strong>: Blue component between 0 and 1.</li>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>a</strong>: Alpha component between 0 and 1.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>r</strong>: Red component between 0 and 1.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>g</strong>: Green component between 0 and 1.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>b</strong>: Blue component between 0 and 1.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>a</strong>: Alpha component between 0 and 1.</li>
 </ul>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Color.new(t)</p>
 <ul>
-<li><a href="/types"><span class="tag tab"></span></a> <strong>t</strong>: The table should use the <code class="codehilite">r</code>, <code class="codehilite">g</code>, <code class="codehilite">b</code> and <code class="codehilite">a</code> index. <br>By default the value is 0 for color and 1 for alpha.</li>
+<li><a href="../types/"><span class="tag tab"></span></a> <strong>t</strong>: The table should use the <code class="codehilite">r</code>, <code class="codehilite">g</code>, <code class="codehilite">b</code> and <code class="codehilite">a</code> index. <br>By default the value is 0 for color and 1 for alpha.</li>
 </ul>
 </div>
 <div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">red</span> <span class="o">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
@@ -2897,11 +2897,11 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 <p>If you want to use value between 0 and 255 you should divide them by 255 before construct the object.</p>
 </div>
 <h3 id="colorfromstring">Color.fromString(...)<a class="headerlink" href="#colorfromstring" title="Permanent link"> </a></h3>
-<p><a href="/types"><span class="ret col"></span></a>&nbsp;Return a color from a color string ('Red', 'Green' etc), capitalization ignored.</p>
+<p><a href="../types/"><span class="ret col"></span></a>&nbsp;Return a color from a color string ('Red', 'Green' etc), capitalization ignored.</p>
 <div class="admonition info">
 <p class="admonition-title">Color.fromString(colorStr)</p>
 <ul>
-<li><a href="/types"><span class="tag str"></span></a> <strong>colorStr</strong>: Any <a href="../player-color/">Player Color</a> or color added with <a href="#coloradd">Color.Add</a>.</li>
+<li><a href="../types/"><span class="tag str"></span></a> <strong>colorStr</strong>: Any <a href="../player-color/">Player Color</a> or color added with <a href="#coloradd">Color.Add</a>.</li>
 </ul>
 </div>
 <div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">col</span> <span class="o">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">fromString</span><span class="p">(</span><span class="s2">&quot;Blue&quot;</span><span class="p">)</span>
@@ -2909,8 +2909,8 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 </pre></div>
 
 <h3 id="colorblue">Color.Blue<a class="headerlink" href="#colorblue" title="Permanent link"> </a></h3>
-<p><a href="/types"><span class="ret col" style="margin-right:5px;"></span></a>
-<a href="/types"><span class="ret str"></span></a>&nbsp;Return a color from a color string ('Red', 'Green' etc).</p>
+<p><a href="../types/"><span class="ret col" style="margin-right:5px;"></span></a>
+<a href="../types/"><span class="ret str"></span></a>&nbsp;Return a color from a color string ('Red', 'Green' etc).</p>
 <p>Any <a href="../player-color/">Player Color</a> or color added with <a href="#coloradd">Color.Add</a>.</p>
 <div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">color</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">Blue</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">color</span><span class="p">)</span> <span class="c1">-- Color: Blue { r = 0.118, g = 0.53, b = 1, a = 1 }</span>
@@ -2924,12 +2924,12 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 <hr />
 <h2 id="element-access-details">Element access details<a class="headerlink" href="#element-access-details" title="Permanent link"> </a></h2>
 <h3 id="setat">setAt(...)<a class="headerlink" href="#setat" title="Permanent link"> </a></h3>
-<p><a href="/types"><span class="ret sel"></span></a>&nbsp;Update one component of the color and returning self.</p>
+<p><a href="../types/"><span class="ret sel"></span></a>&nbsp;Update one component of the color and returning self.</p>
 <div class="admonition info">
 <p class="admonition-title">setAt(key, num)</p>
 <ul>
-<li><a href="/types"><span class="tag int"></span></a> <strong>key</strong>: Index of component (1, 2, 3 or 4 for r, g, b or a).</li>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>num</strong>: New value.</li>
+<li><a href="../types/"><span class="tag int"></span></a> <strong>key</strong>: Index of component (1, 2, 3 or 4 for r, g, b or a).</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>num</strong>: New value.</li>
 </ul>
 </div>
 <div class="codehilite"><pre><span></span><span class="n">col</span> <span class="o">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">Blue</span>
@@ -2938,23 +2938,23 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 </pre></div>
 
 <h3 id="set">set(...)<a class="headerlink" href="#set" title="Permanent link"> </a></h3>
-<p><a href="/types"><span class="ret sel"></span></a>&nbsp;Update all components of the vector and returning self.</p>
+<p><a href="../types/"><span class="ret sel"></span></a>&nbsp;Update all components of the vector and returning self.</p>
 <p>Providing a nil value makes it ignore that argument.</p>
 <div class="admonition info">
 <p class="admonition-title">set(r, g, b)</p>
 <ul>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>r</strong>: New value of Red component.</li>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>g</strong>: New value of Green component.</li>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>b</strong>: New value of Blue component.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>r</strong>: New value of Red component.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>g</strong>: New value of Green component.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>b</strong>: New value of Blue component.</li>
 </ul>
 </div>
 <div class="admonition info">
 <p class="admonition-title">set(r, g, b, a)</p>
 <ul>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>r</strong>: New value of Red component.</li>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>g</strong>: New value of Green component.</li>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>b</strong>: New value of Blue component.</li>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>a</strong>: New value of Alpha component.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>r</strong>: New value of Red component.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>g</strong>: New value of Green component.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>b</strong>: New value of Blue component.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>a</strong>: New value of Alpha component.</li>
 </ul>
 </div>
 <div class="codehilite"><pre><span></span><span class="n">col</span> <span class="o">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">black</span>
@@ -2963,17 +2963,17 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 </pre></div>
 
 <h3 id="get">get()<a class="headerlink" href="#get" title="Permanent link"> </a></h3>
-<p><a href="/types"><span class="ret flo" style="margin-right:5px;"></span></a>
-<a href="/types"><span class="ret flo" style="margin-right:5px;"></span></a>
-<a href="/types"><span class="ret flo" style="margin-right:5px;"></span></a>
-<a href="/types"><span class="ret flo"></span></a>&nbsp;Returns <code class="codehilite">r</code>, <code class="codehilite">g</code>, <code class="codehilite">b</code>, <code class="codehilite">a</code> components as four separate values.</p>
+<p><a href="../types/"><span class="ret flo" style="margin-right:5px;"></span></a>
+<a href="../types/"><span class="ret flo" style="margin-right:5px;"></span></a>
+<a href="../types/"><span class="ret flo" style="margin-right:5px;"></span></a>
+<a href="../types/"><span class="ret flo"></span></a>&nbsp;Returns <code class="codehilite">r</code>, <code class="codehilite">g</code>, <code class="codehilite">b</code>, <code class="codehilite">a</code> components as four separate values.</p>
 <div class="codehilite"><pre><span></span><span class="n">col</span> <span class="o">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">Blue</span>
 <span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">=</span> <span class="n">col</span><span class="p">:</span><span class="n">get</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">r</span> <span class="o">+</span> <span class="n">g</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">a</span><span class="p">)</span> <span class="c1">--&gt; 2.648</span>
 </pre></div>
 
 <h3 id="copy">copy()<a class="headerlink" href="#copy" title="Permanent link"> </a></h3>
-<p><a href="/types"><span class="ret col"></span></a>&nbsp;Copy self into a new Color and return it.</p>
+<p><a href="../types/"><span class="ret col"></span></a>&nbsp;Copy self into a new Color and return it.</p>
 <div class="codehilite"><pre><span></span><span class="n">col1</span> <span class="o">=</span> <span class="n">Color</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">)</span>
 <span class="n">col2</span> <span class="o">=</span> <span class="n">col1</span><span class="p">:</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">col1</span><span class="p">:</span><span class="n">set</span><span class="p">(</span><span class="mf">0.75</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span>
@@ -2984,11 +2984,11 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 <h2 id="methods-details">Methods details<a class="headerlink" href="#methods-details" title="Permanent link"> </a></h2>
 <h3 id="methods-not-modifying-self_1">Methods not modifying self<a class="headerlink" href="#methods-not-modifying-self_1" title="Permanent link"> </a></h3>
 <h4 id="tohex">toHex(...)<a class="headerlink" href="#tohex" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret str"></span></a>&nbsp;Returns a hex string representation of self.</p>
+<p><a href="../types/"><span class="ret str"></span></a>&nbsp;Returns a hex string representation of self.</p>
 <div class="admonition info">
 <p class="admonition-title">toHex(includeAlpha)</p>
 <ul>
-<li><a href="/types"><span class="tag boo"></span></a> <strong>includeAlpha</strong>: Include or not the <code class="codehilite">a</code> value. (Default true)</li>
+<li><a href="../types/"><span class="tag boo"></span></a> <strong>includeAlpha</strong>: Include or not the <code class="codehilite">a</code> value. (Default true)</li>
 </ul>
 </div>
 <div class="codehilite"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="n">blue</span><span class="p">:</span><span class="n">toHex</span><span class="p">())</span> <span class="c1">-- 1e87ffff</span>
@@ -2997,23 +2997,23 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 </pre></div>
 
 <h4 id="tostring">toString(...)<a class="headerlink" href="#tostring" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret str"></span></a>&nbsp;Returns a color string if matching this instance, nil otherwise, optional numeric <code class="codehilite">tolerance</code> param.</p>
+<p><a href="../types/"><span class="ret str"></span></a>&nbsp;Returns a color string if matching this instance, nil otherwise, optional numeric <code class="codehilite">tolerance</code> param.</p>
 <div class="admonition info">
 <p class="admonition-title">toString(tolerance)</p>
 <ul>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>tolerance</strong>: Numeric <code class="codehilite">tolerance</code>, by default 0.01.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>tolerance</strong>: Numeric <code class="codehilite">tolerance</code>, by default 0.01.</li>
 </ul>
 </div>
 <div class="codehilite"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span> <span class="mf">0.118</span><span class="p">,</span> <span class="mf">0.53</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span><span class="n">toString</span><span class="p">())</span> <span class="c1">-- Blue</span>
 </pre></div>
 
 <h4 id="equals">equals(...)<a class="headerlink" href="#equals" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret boo"></span></a>&nbsp;Returns true if <code class="codehilite">otherCol</code> same as self, false otherwise, optional numeric <code class="codehilite">tolerance</code> param.</p>
+<p><a href="../types/"><span class="ret boo"></span></a>&nbsp;Returns true if <code class="codehilite">otherCol</code> same as self, false otherwise, optional numeric <code class="codehilite">tolerance</code> param.</p>
 <div class="admonition info">
 <p class="admonition-title">equals(otherCol, tolerance)</p>
 <ul>
-<li><a href="/types"><span class="tag col"></span></a> <strong>otherCol</strong>: The color to compare with.</li>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>tolerance</strong>: Numeric <code class="codehilite">tolerance</code>, by default 0.01.</li>
+<li><a href="../types/"><span class="tag col"></span></a> <strong>otherCol</strong>: The color to compare with.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>tolerance</strong>: Numeric <code class="codehilite">tolerance</code>, by default 0.01.</li>
 </ul>
 </div>
 <div class="codehilite"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span> <span class="mf">0.118</span><span class="p">,</span> <span class="mf">0.53</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span><span class="n">equals</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="n">Blue</span><span class="p">:</span><span class="n">copy</span><span class="p">()))</span> <span class="c1">-- true</span>
@@ -3023,12 +3023,12 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 </pre></div>
 
 <h4 id="lerp">lerp(...)<a class="headerlink" href="#lerp" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret col"></span></a>&nbsp;Return a color some part of the way between self and <code class="codehilite">otherCol</code>, numeric arg [0, 1] is the fraction.</p>
+<p><a href="../types/"><span class="ret col"></span></a>&nbsp;Return a color some part of the way between self and <code class="codehilite">otherCol</code>, numeric arg [0, 1] is the fraction.</p>
 <div class="admonition info">
 <p class="admonition-title">lerp(otherCol, fraction)</p>
 <ul>
-<li><a href="/types"><span class="tag col"></span></a> <strong>otherCol</strong>: The color to compare with.</li>
-<li><a href="/types"><span class="tag flo"></span></a> <strong>fraction</strong>: Numeric <code class="codehilite">fraction</code>.</li>
+<li><a href="../types/"><span class="tag col"></span></a> <strong>otherCol</strong>: The color to compare with.</li>
+<li><a href="../types/"><span class="tag flo"></span></a> <strong>fraction</strong>: Numeric <code class="codehilite">fraction</code>.</li>
 </ul>
 </div>
 <div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">pink</span> <span class="o">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">Red</span><span class="p">:</span><span class="n">lerp</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="n">White</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
@@ -3036,12 +3036,12 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 </pre></div>
 
 <h4 id="dump">dump(...)<a class="headerlink" href="#dump" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret str" style="margin-right:5px;"></span></a>
-<a href="/types"><span class="ret flo"></span></a>&nbsp;Return string describing self, optional string prefix.</p>
+<p><a href="../types/"><span class="ret str" style="margin-right:5px;"></span></a>
+<a href="../types/"><span class="ret flo"></span></a>&nbsp;Return string describing self, optional string prefix.</p>
 <div class="admonition info">
 <p class="admonition-title">dump(prefix)</p>
 <ul>
-<li><a href="/types"><span class="tag str"></span></a> <strong>prefix</strong>: The prefix of return string.</li>
+<li><a href="../types/"><span class="tag str"></span></a> <strong>prefix</strong>: The prefix of return string.</li>
 </ul>
 </div>
 <div class="admonition warning">
@@ -3057,7 +3057,7 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 
 <h3 id="other-methods_1">Other methods<a class="headerlink" href="#other-methods_1" title="Permanent link"> </a></h3>
 <h4 id="colorlist">Color.list<a class="headerlink" href="#colorlist" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret tab"></span></a>&nbsp;Returns a table of all color strings.</p>
+<p><a href="../types/"><span class="ret tab"></span></a>&nbsp;Returns a table of all color strings.</p>
 <div class="codehilite"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">list</span>
 <span class="c1">-- Same as</span>
 <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
@@ -3077,12 +3077,12 @@ Color.fromHex([<span class="tag str"></span>](/types)&nbsp;hexStr) | Return a co
 </pre></div>
 
 <h4 id="coloradd">Color.Add(...)<a class="headerlink" href="#coloradd" title="Permanent link"> </a></h4>
-<p><a href="/types"><span class="ret nil"></span></a>&nbsp;Add your own color definition to the class.</p>
+<p><a href="../types/"><span class="ret nil"></span></a>&nbsp;Add your own color definition to the class.</p>
 <div class="admonition info">
 <p class="admonition-title">dump(name, yourColor)</p>
 <ul>
-<li><a href="/types"><span class="tag str"></span></a> <strong>name</strong>: The name of the color.</li>
-<li><a href="/types"><span class="tag col"></span></a> <strong>yourColor</strong>: The color value.</li>
+<li><a href="../types/"><span class="tag str"></span></a> <strong>name</strong>: The name of the color.</li>
+<li><a href="../types/"><span class="tag col"></span></a> <strong>yourColor</strong>: The color value.</li>
 </ul>
 </div>
 <div class="codehilite"><pre><span></span><span class="n">Color</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s2">&quot;River&quot;</span><span class="p">,</span> <span class="n">Color</span><span class="p">(</span><span class="mi">52</span> <span class="o">/</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">152</span> <span class="o">/</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">219</span> <span class="o">/</span> <span class="mi">255</span><span class="p">))</span>
