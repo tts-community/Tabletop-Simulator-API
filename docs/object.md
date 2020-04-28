@@ -146,6 +146,7 @@ getObjects() | Returns a Table of Objects in the script zone/bag/deck. | [<span 
 <a class="anchor" id="getquantity"></a>getQuantity() | How many objects are in the stack. Returns -1 if the Object is not a stack. | [<span class="ret int"></span>](types.md) |
 getRotationValue() | Returns the current rotationValue. Rotation values are used to give value to different rotations (like dice). | [<span class="ret var"></span>](types.md) | [<span class="i"></span>](#getrotationvalue)
 getRotationValues() | Returns a Table of rotation values. Rotation values are used to give value to different rotations (like dice). | [<span class="ret tab"></span>](types.md) | [<span class="i"></span>](#getrotationvalues)
+<a class="anchor" id="getselectingplayers"></a>getSelectingPlayers() | Returns table of players currently selecting the object. | [<span class="ret tab"></span>](types.md)
 <a class="anchor" id="getstateid"></a>getStateId() | Current [state](https://kb.tabletopsimulator.com/host-guides/creating-states/) ID (index) an object is in. Returns -1 if there are no other states. State ids (indexes) start at 1. | [<span class="ret int"></span>](types.md) |
 getStates() | Returns a Table of information on the [states](https://kb.tabletopsimulator.com/host-guides/creating-states/) of an Object. | [<span class="ret tab"></span>](types.md) | [<span class="i"></span>](#getstates)
 getValue() | Object value. What the value represents depends on what type of Object this function is used on. | [<span class="ret int"></span>](types.md) | [<span class="i"></span>](#getvalue)
@@ -178,6 +179,8 @@ These functions perform general actions on objects.
 
 Function Name | Description | Return | &nbsp;
 -- | -- | -- | --
+<a class="anchor" id="addtoplayerselection"></a>addToPlayerSelection([<span class="tag str"></span>](types.md)&nbsp;player_color) | Add object to player's selection. | [<span class="ret boo"></span>](types.md)
+<a class="anchor" id="removefromlayerselection"></a>removeFromPlayerSelection([<span class="tag str"></span>](types.md)&nbsp;player_color) | Remove object from player's selection. | [<span class="ret boo"></span>](types.md)
 <a class="anchor" id="flip"></a>flip() | Flip Object over. | [<span class="ret boo"></span>](types.md) |
 clone([<span class="tag tab"></span>](types.md)&nbsp;parameters) | Copy/Paste this Object, returning a reference to the new Object. | [<span class="ret obj"></span>](types.md) | [<span class="i"></span>](#clone)
 cut([<span class="tag int"></span>](types.md)&nbsp;count) | Cuts (splits) a deck at the given card count. | [<span class="ret tab"></span>](types.md) | [<span class="i"></span>](#cut)
