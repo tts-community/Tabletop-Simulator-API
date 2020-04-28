@@ -17,8 +17,8 @@ Variable | Description | Type
 
 Function Name | Description | Return | &nbsp;
 -- | -- | -- | --:
-<a class="anchor" id="getpage"></a>getPage([<span class="tag boo"></span>](types.md)&nbsp;offsetPageNumbering) | Gets the current page of the PDF. | [<span class="ret int"></span>](types.md)
-<a class="anchor" id="setpage"></a>setPage([<span class="tag int"></span>](types.md)&nbsp;page, [<span class="tag boo"></span>](types.md)&nbsp;offsetPageNumbering = false) | Set current page. | [<span class="ret boo"></span>](types.md)
+<a class="anchor" id="getpage"></a>getPage([<span class="tag boo"></span>](types.md)&nbsp;offsetPageNumbering) | Gets the current page of the PDF. | [<span class="ret int"></span>](types.md) | [<span class="i"></span>](#getpage)
+<a class="anchor" id="setpage"></a>setPage([<span class="tag int"></span>](types.md)&nbsp;page, [<span class="tag boo"></span>](types.md)&nbsp;offsetPageNumbering) | Set current page. | [<span class="ret boo"></span>](types.md)| [<span class="i"></span>](#setpage)
 <a class="anchor" id="sethighlight"></a>setHighlight(x1, y1, x2, y2) | Set highlight box on current page. | [<span class="ret boo"></span>](types.md)
 <a class="anchor" id="clearhighlight"></a>clearHighlight() | Clear highlight. | [<span class="ret boo"></span>](types.md)
 
