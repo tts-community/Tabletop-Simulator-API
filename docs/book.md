@@ -28,8 +28,8 @@ Function Name | Description | Return | &nbsp;
 
 [<span class="ret int"></span>](types.md)&nbsp; Gets the current page of the PDF.
 
-!!!info "getPage(offsetPageNumbering)"
-	* [<span class="tag boo"></span>](types.md) **offsetPageNumbering**: Indicates whether or not [page_offset](#page_offset) should be applied to the page number returned.
+!!! info "getPage(offsetPageNumbering)"
+	  * [<span class="tag boo"></span>](types.md) **offsetPageNumbering**: Indicates whether or not [page_offset](#page_offset) should be applied to the page number returned.
         * {>>Optional, defaults to `false`.<<}
 ---
 
@@ -37,7 +37,7 @@ Function Name | Description | Return | &nbsp;
 
 [<span class="ret boo"></span>](types.md)&nbsp; Sets the current page of the PDF. Returns true if the page was succesfully set, false if the page number was invalid.
 
-!!!info "setPage(offsetPageNumbering)"
-	* [<span class="tag boo"></span>](types.md) **offsetPageNumbering**: Indicates whether or not [page_offset](#page_offset) should be applied to the page number set.
+!!! info "setPage(page, offsetPageNumbering)"
+    * [<span class="tag int"></span>](types.md) **page**: The new page number.
+    * [<span class="tag boo"></span>](types.md) **offsetPageNumbering**: Indicates whether or not [page_offset](#page_offset) should be applied to the page number set.
         * {>>Optional, defaults to `false`.<<}
----
