@@ -133,6 +133,7 @@ These functions obtain information from an object.
 
 Function Name | Description | Return | &nbsp;
 -- | -- | -- | --
+getAttachments() | Returns a table in the same format as [getObjects()](#getobjects) for containers. | [<span class="ret tab"></span>](types.md) |
 <a class="anchor" id="getcolortint"></a>getColorTint() | Color tint. | [<span class="ret col"></span>](types.md#color) |
 getCustomObject() | Returns a Table with the Custom Object information of a Custom Object. | [<span class="ret tab"></span>](types.md) | [<span class="i"></span>](#getcustomobject)
 <a class="anchor" id="getdescription"></a>getDescription() | Description, also shows as part of Object's tooltip. | [<span class="ret str"></span>](types.md)
@@ -179,9 +180,14 @@ These functions perform general actions on objects.
 
 Function Name | Description | Return | &nbsp;
 -- | -- | -- | --
-<a class="anchor" id="addtoplayerselection"></a>addToPlayerSelection([<span class="tag str"></span>](types.md)&nbsp;player_color) | Add object to player's selection. | [<span class="ret boo"></span>](types.md)
-<a class="anchor" id="removefromlayerselection"></a>removeFromPlayerSelection([<span class="tag str"></span>](types.md)&nbsp;player_color) | Remove object from player's selection. | [<span class="ret boo"></span>](types.md)
-<a class="anchor" id="flip"></a>flip() | Flip Object over. | [<span class="ret boo"></span>](types.md) |
+<a class="anchor" id="addattachment"></a>addAttachment([<span class="tag obj"></span>](types.md)&nbsp;Object) | The Object supplied as param is destroyed and becomes a dummy Object child. | [<span class="ret boo"></span>](types.md)
+<a class="anchor" id="removeattachment"></a>removeAttachment([<span class="tag int"></span>](types.md)&nbsp;index) | Removes a child with given index. Use getAttachments() to find out the index property. | [<span class="ret obj"></span>](types.md)
+<a class="anchor" id="removeattachments"></a>removeAttachments() | Detaches the children of this Object. Returns a table of object references | [<span class="ret tab"></span>](types.md)
+<a class="anchor" id="destroyattachment"></a>destroyAttachment([<span class="tag int"></span>](types.md)&nbsp;index) | Destroys an attachment with given index. | [<span class="ret bool"></span>](types.md)
+<a class="anchor" id="destroyattachments"></a>destroyAttachments() | Destroy all attachments. | [<span class="ret bool"></span>](types.md)
+<a class="anchor" id="addtoplayerselection"></a>addToPlayerSelection([<span class="tag str"></span>](types.md)&nbsp;player_color) | Adds object to player's selection. | [<span class="ret boo"></span>](types.md)
+<a class="anchor" id="removefromlayerselection"></a>removeFromPlayerSelection([<span class="tag str"></span>](types.md)&nbsp;player_color) | Removes object from player's selection. | [<span class="ret boo"></span>](types.md)
+<a class="anchor" id="flip"></a>flip() | Flips Object over. | [<span class="ret boo"></span>](types.md) |
 clone([<span class="tag tab"></span>](types.md)&nbsp;parameters) | Copy/Paste this Object, returning a reference to the new Object. | [<span class="ret obj"></span>](types.md) | [<span class="i"></span>](#clone)
 cut([<span class="tag int"></span>](types.md)&nbsp;count) | Cuts (splits) a deck at the given card count. | [<span class="ret tab"></span>](types.md) | [<span class="i"></span>](#cut)
 deal([<span class="tag int"></span>](types.md)&nbsp;number, [<span class="tag str"></span>](types.md)&nbsp;player_color, [<span class="tag int"></span>](types.md)&nbsp;index) | Deals Objects. Will deal from decks/bags/stacks/individual items. | [<span class="ret obj"></span>](types.md) | [<span class="i"></span>](#deal)
@@ -949,10 +955,11 @@ If an Object is inside of a container, it does not exist in-game. As a result, y
 	!!!info "Bag or Deck"
 		Returns a Table of sub-Tables, each sub-Table containing data on 1 bagged item. Indexes start at 0.
 
+		* [<span class="tag int"></span>](types.md) **index**: Index of the item, represents the item's order in the container.
 		* [<span class="tag str"></span>](types.md) **name**: Name of the item.
 		* [<span class="tag str"></span>](types.md) **description**: Description of the item.
 		* [<span class="tag str"></span>](types.md) **guid**: GUID of the item.
-		* [<span class="tag int"></span>](types.md) **index**: Index of the item, represents the item's order in the container.
+		* [<span class="tag str"></span>](types.md) **gm_notes**: GM Notes on the item.
 		* [<span class="tag str"></span>](types.md) **lua_script**: Any Lua scripting saved on the item.
 		* [<span class="tag str"></span>](types.md) **lua_script_state**: Any JSON save data on this item.
 		* {>>nickname: A duplicate of the "name" field.<<}
