@@ -13,10 +13,10 @@ Read Example = `isResting = self.resting` Write Example = `self.resting = true`
 
 Variable | Description | Type
 -- | -- | :--
-<a class="anchor" id="angular_drag"></a>angular_drag | Angular drag. [Unity rigidbody property](https://docs.unity3d.com/Manual/class-Rigidbody.html). | [<span class="tag flo"></span>](types.md) <a class="anchor" id="angular_drag"></a>
+<a class="anchor" id="angular_drag"></a>angular_drag | Angular drag. [Unity rigidbody property](https://docs.unity3d.com/2019.1/Documentation/Manual/class-Rigidbody.html). | [<span class="tag flo"></span>](types.md) <a class="anchor" id="angular_drag"></a>
 <a class="anchor" id="auto_raise"></a>auto_raise | If an object should be lifted above other objects to avoid collision when held by a player. | [<span class="tag boo"></span>](types.md)
 <a class="anchor" id="bounciness"></a>bounciness | Bounciness, value of 0-1. [Unity physics material](https://docs.unity3d.com/Manual/class-PhysicMaterial.html). | [<span class="tag flo"></span>](types.md)
-<a class="anchor" id="drag"></a>drag_selectable | Drag Selectable toggle of object. | [<span class="tag boo"></span>](types.md)
+<a class="anchor" id="drag_selectable"></a>drag_selectable | If this is set, object will never be drag-selected. | [<span class="tag boo"></span>](types.md)
 <a class="anchor" id="drag"></a>drag | Drag. [Unity rigidbody property](https://docs.unity3d.com/Manual/class-Rigidbody.html). | [<span class="tag flo"></span>](types.md)
 <a class="anchor" id="dynamic_friction"></a>dynamic_friction | Dynamic friction, value of 0-1. [Unity physics material](https://docs.unity3d.com/Manual/class-PhysicMaterial.html). | [<span class="tag flo"></span>](types.md)
 <a class="anchor" id="grid_projection"></a>grid_projection | If grid lines can appear on the Object if visible grids are turned on. | [<span class="tag boo"></span>](types.md)
@@ -27,13 +27,13 @@ Variable | Description | Type
 <a class="anchor" id="interactable"></a>interactable | If an object can be interacted with by Players. Other object will still be able to interact with it. | [<span class="tag boo"></span>](types.md)
 <a class="anchor" id="is_face_down"></a>is_face_down | If an Object is roughly face-down (like with cards). The face is the "top" of the Object, the direction of its positive Y coordinate. Read only.  | [<span class="tag boo"></span>](types.md)
 <a class="anchor" id="loading_custom"></a>loading_custom | If the Object's custom elements (images/models/etc) are loading. Read only. | [<span class="tag boo"></span>](types.md)
-<a class="anchor" id="mass"></a>mass | Mass. [Unity rigidbody property](https://docs.unity3d.com/Manual/class-Rigidbody.html). | [<span class="tag flo"></span>](types.md)
+<a class="anchor" id="mass"></a>mass | Mass. [Unity rigidbody property](https://docs.unity3d.com/2019.1/Documentation/Manual/class-Rigidbody.html). | [<span class="tag flo"></span>](types.md)
 <a class="anchor" id="name"></a>name | The Object's name. Read only, use `setName("")` to write to it. | [<span class="tag str"></span>](types.md)
-<a class="anchor" id="resting"></a>resting | If an Object is at rest. [Unity rigidbody property](https://docs.unity3d.com/412/Documentation/Components/RigidbodySleeping.html). | [<span class="tag boo"></span>](types.md)
+<a class="anchor" id="resting"></a>resting | If an Object is at rest. [Unity rigidbody property](https://docs.unity3d.com/2019.1/Documentation/Manual/RigidbodiesOverview.html). | [<span class="tag boo"></span>](types.md)
 <a class="anchor" id="script_code"></a>script_code | The Lua Script on the Object. | [<span class="tag str"></span>](types.md)
 <a class="anchor" id="script_state"></a>script_state | The saved data on the object. See [onSave()](event.md#onsave). | [<span class="tag str"></span>](types.md)
 <a class="anchor" id="spawning"></a>spawning | If the Object is finished spawning. Read only. | [<span class="tag boo"></span>](types.md)
-<a class="anchor" id="static_friction"></a>static_friction | Static friction, value of 0-1. [Unity physics material](https://docs.unity3d.com/Manual/class-PhysicMaterial.html). | [<span class="tag flo"></span>](types.md)
+<a class="anchor" id="static_friction"></a>static_friction | Static friction, value of 0-1. [Unity physics material](https://docs.unity3d.com/2019.1/Documentation/Manual/class-PhysicMaterial.html). | [<span class="tag flo"></span>](types.md)
 <a class="anchor" id="sticky"></a>sticky | If other Objects on top of this one are also picked up when this Object is. | [<span class="tag boo"></span>](types.md)
 <a class="anchor" id="tag"></a>tag | This object's type. Read only. | [<span class="tag str"></span>](types.md)
 <a class="anchor" id="tooltip"></a>tooltip | If the tooltip opens when a pointer hovers over the object. Tooltips display name and description. | [<span class="tag boo"></span>](types.md)
@@ -199,6 +199,7 @@ dealToColorWithOffset([<span class="tag vec"></span>](types.md#vector)&nbsp;offs
 jointTo([<span class="tag obj"></span>](types.md)&nbsp;object, [<span class="tag tab"></span>](types.md)&nbsp;parameters) | Joints objects together, in the same way the Joint tool does. | [<span class="ret boo"></span>](types.md) | [<span class="i"></span>](#jointto)
 putObject([<span class="tag obj"></span>](types.md)&nbsp;put_object) | Places an object into a container (chip stacks/bags/decks). | [<span class="ret obj"></span>](types.md) | [<span class="i"></span>](#putobject)
 <a class="anchor" id="randomize"></a>randomize([<span class="tag str"></span>](types.md)&nbsp;color) | Shuffles deck/bag, rolls dice/coin, lifts other objects into the air. Same as pressing `R` by default. If the optional parameter `color` is used, this function will trigger `onObjectRandomized()`, passing that player color. | [<span class="ret boo"></span>](types.md) |
+registerCollisions([<span class="tag boo"></span>](types.md)&nbsp;stay) | Registers this object for Global collision events. | [<span class="ret boo"></span>](types.md) | [<span class="i"></span>](#registercollisions)
 reload() | Returns Object reference of itself after it respawns itself. | [<span class="ret obj"></span>](types.md) | [<span class="i"></span>](#reload)
 <a class="anchor" id="reset"></a>reset() | Resets this Object. Resetting a Deck brings all the Cards back into it. Resetting a Bag clears its contents (works for both Loot and Infinite Bags). | [<span class="ret boo"></span>](types.md) |
 <a class="anchor" id="roll"></a>roll() | Rolls dice/coins. | [<span class="ret boo"></span>](types.md) |
@@ -206,6 +207,7 @@ reload() | Returns Object reference of itself after it respawns itself. | [<span
 <a class="anchor" id="shufflestates"></a>shuffleStates() | Returns an Object reference to a new [state](http://berserk-games.com/knowledgebase/creating-states/) after randomly selecting and changing to one. | [<span class="ret obj"></span>](types.md) |
 split([<span class="tag int"></span>](types.md)&nbsp;piles) | Splits a deck, as evenly as possible, into a number of piles. | [<span class="ret tab"></span>](types.md) | [<span class="i"></span>](#split)
 takeObject([<span class="tag tab"></span>](types.md)&nbsp;parameters) | Returns an Object reference of Object taken from a container (bag/deck/chip stack) and placed into the world. | [<span class="ret obj"></span>](types.md) | [<span class="i"></span>](#takeobject)
+unregisterCollisions() | Unregisters this object for Global collision events. | [<span class="ret boo"></span>](types.md) | [<span class="i"></span>](#unregistercollisions)
 
 
 
@@ -303,7 +305,7 @@ setVectorLines([<span class="tag tab"></span>](types.md)&nbsp;parameters) | Spaw
 
 ####getBounds()
 
-[<span class="ret tab"></span>](types.md)&nbsp;Returns a Table of Vector information describing the size of an object in Global terms. [Bounds](https://docs.unity3d.com/ScriptReference/Bounds.html) are part of Unity, and represent an imaginary square box that can be drawn around an object. Unlike scale, it can help indicate the size of an object in in-game units, not just relative model size.
+[<span class="ret tab"></span>](types.md)&nbsp;Returns a Table of Vector information describing the size of an object in Global terms. [Bounds](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/Bounds.html) are part of Unity, and represent an imaginary square box that can be drawn around an object. Unlike scale, it can help indicate the size of an object in in-game units, not just relative model size.
 
 !!!info "Return Table"
 	* [<span class="tag tab"></span>](types.md) **center**: The Vector of the center of the bounding box.
@@ -324,7 +326,7 @@ setVectorLines([<span class="tag tab"></span>](types.md)&nbsp;parameters) | Spaw
 
 ####getBoundsNormalized()
 
-[<span class="ret tab"></span>](types.md)&nbsp;Returns a Table of Vector information describing the size of an object in Global terms, as if it was rotated to {0,0,0}. [Bounds](https://docs.unity3d.com/ScriptReference/Bounds.html) are part of Unity, and represent an imaginary square box that can be drawn around an object. Unlike scale, it can help indicate the size of an object in in-game units, not just relative model size.
+[<span class="ret tab"></span>](types.md)&nbsp;Returns a Table of Vector information describing the size of an object in Global terms, as if it was rotated to {0,0,0}. [Bounds](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/Bounds.html) are part of Unity, and represent an imaginary square box that can be drawn around an object. Unlike scale, it can help indicate the size of an object in in-game units, not just relative model size.
 
 !!!info "Return Table"
 	* [<span class="tag tab"></span>](types.md) **center**: The Vector of the center of the bounding box.
@@ -1379,6 +1381,17 @@ self.putObject(obj)
 ---
 
 
+####registerCollisions(...)
+
+[<span class="ret boo"></span>](types.md)&nbsp;Registers this object for Global collision events, such as [onObjectCollisionEnter](event.md#onobjectcollisionenter). Always returns `true`.
+
+!!!info "registerCollision(stay)"
+	* [<span class="tag boo"></span>](types.md) **stay**: Whether we should register for [onObjectCollisionStay](event.md#onobjectcollisionstay). Stay events may negatively impact performance, only set this to `true` if absolutely necessary.
+        * {>>Optional, defaults to `false`.<<}
+
+---
+
+
 ####reload()
 
 [<span class="ret obj"></span>](types.md)&nbsp;Returns Object reference of itself after it respawns itself. This function causes the Object to be deleted and respawned instantly to refresh it, so its old Object reference will no longer be valid.
@@ -1477,6 +1490,15 @@ end
 
 ???tip "Tip for using index to pull Object"
 	When you take an Object from the container, all higher indexes are reduced by 1 instantly. If you pull more than once Object at once by their index, you must account for this index changing.
+
+---
+
+
+####unregisterCollisions(...)
+
+[<span class="ret boo"></span>](types.md)&nbsp;Unregisters this object for Global collision events. Returns `true` if the object was previously registered, `false` otherwise.
+
+!!!info "unregisterCollision()"
 
 ---
 
