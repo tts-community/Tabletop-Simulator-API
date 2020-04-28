@@ -1,4 +1,4 @@
-The Tablet is an in-game Object that displays a web page. It has its own class, Browser, with member varibales associated with it. This allows you to manipulate the special properties of a tablet.
+The Tablet is an in-game Object that displays a web page. It has its own class, Browser, with member variables associated with it. This allows you to manipulate the special properties of a tablet.
 
 Example Usage: `self.Browser.url = "https://yahoo.com/"`
 
