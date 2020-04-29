@@ -51,7 +51,7 @@ Function Name | Description | Return | &nbsp;
 
 ####setHighlight(...)
 
-[<span class="ret boo"></span>](types.md)&nbsp;Draws a highlight rectangle on the popout mode of the PDF at the given coorinates. Coordinates (0,0) are the lower left corner of the pdf, while coordinates (1,1) are the upper right corner.
+[<span class="ret boo"></span>](types.md)&nbsp;Draws a highlight rectangle on the popout mode of the PDF at the given coordinates. Coordinates (0,0) are the lower left corner of the PDF, while coordinates (1,1) are the upper right corner.
 
 !!! info "setHighlight(x1, y1, x2, y2)"
     * [<span class="tag flo"></span>](types.md) **x1**: x coordinate of the rectangle's left side.
