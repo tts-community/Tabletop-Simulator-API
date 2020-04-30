@@ -1,7 +1,7 @@
 All input elements allow for the XML UI to interact with the Lua scripts in the game instance.
 
 !!!tip
-    Be sure to check out the [**UI section of the Lua Scripting API**](../ui.md) for how to receive the input from these element types. With Lua scripting, you can even modify the UI elements!
+    Be sure to check out the [**UI section of the Lua Scripting API**](../scripting/scripting-component/ui.md) for how to receive the input from these element types. With Lua scripting, you can even modify the UI elements!
 
 ##Targeting Triggers
 When using an attribute that triggers scripting, like onValueChanged or onClick, the UI will target a default location. Global UI targets Global script, Object UI targets the Object's script. This behavior can be overwritten. For example:

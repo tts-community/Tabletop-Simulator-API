@@ -32,7 +32,7 @@ The Global script, which is a script that is not attached to any particular Obje
 A script that is attached to an in-game Objecet, and is saved as part of it. This is similar to any other property like its scale or tint. Some functions ask for an Object reference in order to attempt to run a function on it. In these cases, Global (exactly as written here) is also a valid Object reference.
 
 ###GUID
-In Tabletop Simulator, a GUID is a unique 6-character [string](types.md)&nbsp;which can be used to identify in-game [Objects](object.md). GUIDs are automatically assigned when objects exist within the scene.
+In Tabletop Simulator, a GUID is a unique 6-character [string](scripting/types.md)&nbsp;which can be used to identify in-game [Objects](scripting/game-object/object.md). GUIDs are automatically assigned when objects exist within the scene.
 
 If an object is duplicated, it will sometimes have the same GUID for 1 frame before the engine assigns a new GUID to the newer Object. Objects in containers (bags/decks/etc) do not automatically get new GUIDs assigned to them in this way. Only once their contents are moved out into the scene.
 
@@ -52,26 +52,26 @@ Defining class requires further knowledge on object-oriented programming to real
 ####Object Classes
 Associated with in-game Objects.
 
-* [Clock](clock.md)
-* [Counter](counter.md)
-* [Object](object.md)
-* [AssetBundle](assetbundle.md)
-* [RPGFigurine](rpgfigurine.md)
-* [TextTool](texttool.md)
+* [Clock](scripting/game-object/clock.md)
+* [Counter](scripting/game-object/counter.md)
+* [Object](scripting/game-object/object.md)
+* [AssetBundle](scripting/game-object/assetbundle.md)
+* [RPGFigurine](scripting/game-object/rpg-figurine.md)
+* [TextTool](scripting/game-object/text-tool.md)
 
 ####Static Classes
 Associated with in-game properties and systems.
 
-* [JSON](json.md)
-* [Player](player.md)
-* [WebRequest](webrequest.md)
-* [Physics](physics.md)
-* [Lighting](lighting.md)
-* [Turns](turns.md)
-* [Notes](notes.md)
-* [UI](ui.md)
-* [Wait](wait.md)
-* [Web Request](webrequest.md)
+* [JSON](scripting/scripting-component/json.md)
+* [Player](scripting/game-component/player.md)
+* [WebRequest](scripting/scripting-component/web-request.md)
+* [Physics](scripting/scripting-component/physics.md)
+* [Lighting](scripting/game-component/lighting.md)
+* [Turns](scripting/game-component/turns.md)
+* [Notes](scripting/game-component/notes.md)
+* [UI](scripting/scripting-component/ui.md)
+* [Wait](scripting/scripting-component/wait.md)
+* [Web Request](scripting/scripting-component/web-request.md)
 
 For more information on what a class is, you can refer to the relevant [Lua Documentation](https://www.lua.org/pil/16.1.html).
 

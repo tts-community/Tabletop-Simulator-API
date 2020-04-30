@@ -57,49 +57,49 @@ nav:
     - 'Introduction': index.md
     - 'Overview': overview.md
     - 'Atom': atom.md
-    - 'External Editor API': externaleditorapi.md
-    - 'Learning Lua': learninglua.md
-    - 'System Console': systemconsole.md
-    - 'Virtual Reality': vr.md
+    - 'External Editor API': external-editor-api.md
+    - 'Learning Lua': learning-lua.md
+    - 'System Console': system-console.md
+    - 'Virtual Reality': virtual-reality.md
     - 'Changelog': changelog.md
   - 'Scripting API':
-    - 'Introduction': intro.md
-    - 'Types': types.md
-    - 'Base': base.md
-    - 'Event': event.md
+    - 'Introduction': scripting/introduction.md
+    - 'Types': scripting/types.md
+    - 'Base': scripting/base.md
+    - 'Event': scripting/event.md
     - 'Game Component':
-      - 'Grid': grid.md
-      - 'Lighting': lighting.md
-      - 'Music Player': musicplayer.md
-      - 'Notes': notes.md
-      - 'Player': player.md
-      - 'Turns': turns.md
+      - 'Grid': scripting/game-component/grid.md
+      - 'Lighting': scripting/game-component/lighting.md
+      - 'Music Player': scripting/game-component/music-scripting/game-component/player.md
+      - 'Notes': scripting/game-component/notes.md
+      - 'Player': scripting/game-component/player.md
+      - 'Turns': scripting/game-component/turns.md
     - 'Game Object':
-      - 'Object': object.md
-      - 'Object Component': component.md
-      - 'AssetBundle': assetbundle.md
-      - 'Book': book.md
-      - 'Browser': browser.md
-      - 'Clock': clock.md
-      - 'Counter': counter.md
-      - 'RPGFigurine': rpgfigurine.md
-      - 'Spawnable Objects': spawnableobjects.md
-      - 'TextTool': texttool.md
+      - 'Object': scripting/game-object/object.md
+      - 'Object Component': scripting/game-object/object-component.md
+      - 'AssetBundle': scripting/game-object/assetbundle.md
+      - 'Book': scripting/game-object/book.md
+      - 'Browser': scripting/game-object/browser.md
+      - 'Clock': scripting/game-object/clock.md
+      - 'Counter': scripting/game-object/counter.md
+      - 'RPGFigurine': scripting/game-object/rpg-figurine.md
+      - 'Spawnable Objects': scripting/game-object/spawnable-objects.md
+      - 'TextTool': scripting/game-object/text-tool.md
     - 'Scripting Component':
-      - 'Color': color.md
-      - 'Player Color': player-color.md
-      - 'JSON': json.md
-      - 'Physics': physics.md
-      - 'Time': time.md
-      - 'UI': ui.md
-      - 'Vector': vector.md
-      - 'Wait': wait.md
-      - 'Web Request': webrequest.md
-      - '(Deprecated) Timer': timer.md
+      - 'Color': scripting/scripting-component/color.md
+      - 'Player Color': player-scripting/scripting-component/player-color.md
+      - 'JSON': scripting/scripting-component/json.md
+      - 'Physics': scripting/scripting-component/physics.md
+      - 'Time': scripting/scripting-component/time.md
+      - 'UI': scripting/scripting-component/ui.md
+      - 'Vector': scripting/scripting-component/vector.md
+      - 'Wait': scripting/scripting-component/wait.md
+      - 'Web Request': scripting/scripting-component/web-request.md
+      - '(Deprecated) Timer': scripting/scripting-component/timer.md
   - 'UI API':
-    - 'Introduction': ui/introUI.md
+    - 'Introduction': ui/introduction.md
     - 'Attributes': ui/attributes.md
-    - 'Basic Elements': ui/basicelements.md
-    - 'Input Elements': ui/inputelements.md
-    - 'Layout/Grouping': ui/layoutgrouping.md
+    - 'Basic Elements': ui/basic-elements.md
+    - 'Input Elements': ui/input-elements.md
+    - 'Layout/Grouping': ui/layout-grouping.md
     - 'Defaults': ui/defaults.md

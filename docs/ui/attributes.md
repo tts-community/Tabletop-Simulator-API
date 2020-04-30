@@ -1,4 +1,4 @@
-boundaryAs mentioned in the [Introduction](introUI.md), attributes are modifiers that can be applied to elements. They can be applied to individual elements or to whole groups of them.
+boundaryAs mentioned in the [Introduction](introscripting/scripting-component/ui.md), attributes are modifiers that can be applied to elements. They can be applied to individual elements or to whole groups of them.
 
 !!!important
     They consists of two parts, a **tag** and a **value**. ***The value is always in quotation marks.***
@@ -44,8 +44,8 @@ Not using the visibility attribute (or setting it to an empty string) does not l
 #####Visiblity Selection
 * `Host`:  Only visible to the game host.
 * `Admin`: Only visible to the host and any promoted player.
-* `Red`: Only visible to the player in that seat color. (Works with all valid [color names](../player-color.md))
-* `Clubs`: Only visible to members of that player group. (Works with all valid [team names](../player.md#team))
+* `Red`: Only visible to the player in that seat color. (Works with all valid [color names](../player-scripting/scripting-component/player-color.md))
+* `Clubs`: Only visible to members of that player group. (Works with all valid [team names](../scripting/game-component/player.md#team))
 
 #####Combining Groups
 You are able to list multiple color names in a single string by placing a vertical line `|` between valid entries.
