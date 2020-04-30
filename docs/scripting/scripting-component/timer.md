@@ -1,3 +1,6 @@
+!!!danger
+    This class is deprecated, you should use [Wait class](scripting/scripting-component/wait.md) instead.
+
 Timer is a static global class which provides methods for executing other functions after a delay and/or repeatedly. Each Timer is tracked by a unique "identifier" string.
 
 > Example Usage: `Timer.destroy(...)`

@@ -95,7 +95,6 @@ nav:
       - 'Vector': scripting/scripting-component/vector.md
       - 'Wait': scripting/scripting-component/wait.md
       - 'Web Request': scripting/scripting-component/web-request.md
-      - '(Deprecated) Timer': scripting/scripting-component/timer.md
   - 'UI API':
     - 'Introduction': ui/introduction.md
     - 'Attributes': ui/attributes.md

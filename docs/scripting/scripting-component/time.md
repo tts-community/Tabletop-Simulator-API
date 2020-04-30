@@ -1,4 +1,4 @@
-Time (not to be confused with the devalued Timer class) is a static global class which provides access to Unity's time information.
+Time (not to be confused with the deprecated [Timer class](scripting/scripting-component/timer.md)) is a static global class which provides access to Unity's time information.
 
 > Example Usage: `Time.time`
 
