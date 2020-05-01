@@ -77,13 +77,14 @@ nav:
     - 'Game Object':
       - 'Object': object.md
       - 'Object Component': component.md
+      - 'Built-in': built-in-object.md
+      - 'Custom Game Objects' : custom-game-objects.md
       - 'AssetBundle': assetbundle.md
       - 'Book': book.md
       - 'Browser': browser.md
       - 'Clock': clock.md
       - 'Counter': counter.md
       - 'RPGFigurine': rpgfigurine.md
-      - 'Spawnable Objects': spawnableobjects.md
       - 'TextTool': texttool.md
     - 'Scripting Component':
       - 'Color': color.md
