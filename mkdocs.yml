@@ -65,21 +65,21 @@ nav:
   - 'Scripting API':
     - 'Introduction': intro.md
     - 'Types': types.md
-    - 'Event': event.md
     - 'Base': base.md
-    - 'Object': object.md
-    - 'Color': color.md
-    - 'Component': component.md
-    - 'Grid': grid.md
-    - 'JSON': json.md
-    - 'Lighting': lighting.md
-    - 'Music Player': musicplayer.md
-    - 'Notes': notes.md
-    - 'Physics': physics.md
-    - 'Player': player.md
-    - 'Player Color': player-color.md
-    - 'Spawnable Objects':
-      - 'Spawnable Objects': spawnableobjects.md
+    - 'Event': event.md
+    - 'Game Component':
+      - 'Grid': grid.md
+      - 'Lighting': lighting.md
+      - 'Music Player': musicplayer.md
+      - 'Notes': notes.md
+      - 'Player': player.md
+      - 'Player Color': player-color.md
+      - 'Turns': turns.md
+    - 'Game Object':
+      - 'Object': object.md
+      - 'Object Component': component.md
+      - 'Built-in': built-in-object.md
+      - 'Custom Game Objects' : custom-game-objects.md
       - 'AssetBundle': assetbundle.md
       - 'Book': book.md
       - 'Browser': browser.md
@@ -87,12 +87,15 @@ nav:
       - 'Counter': counter.md
       - 'RPGFigurine': rpgfigurine.md
       - 'TextTool': texttool.md
-    - 'Time': time.md
-    - 'Turns': turns.md
-    - 'UI': ui.md
-    - 'Vector': vector.md
-    - 'Wait': wait.md
-    - 'Web Request': webrequest.md
+    - 'Scripting Component':
+      - 'Color': color.md
+      - 'JSON': json.md
+      - 'Physics': physics.md
+      - 'Time': time.md
+      - 'UI': ui.md
+      - 'Vector': vector.md
+      - 'Wait': wait.md
+      - 'Web Request': webrequest.md
   - 'UI API':
     - 'Introduction': ui/introUI.md
     - 'Attributes': ui/attributes.md
