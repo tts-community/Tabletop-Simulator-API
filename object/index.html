@@ -5459,6 +5459,10 @@
 <p class="admonition-title">Returned Object</p>
 <p>The container is returned as the Object reference. Either this is the container/deck/stack the other Object was placed into, or the deck/stack that was formed by the putObject action.</p>
 </div>
+<div class="admonition info">
+<p class="admonition-title">Putting Cards into Decks</p>
+<p>When you call this <code class="codehilite">putObject()</code> to put a card into a deck, the card goes into the end of the deck which is closest to it in Y elevation. So, if both the card and the deck are resting on the table, the card will be put at the bottom of the deck. if the card is hovering above the deck, it will be put at the top."</p>
+</div>
 <div class="codehilite"><pre><span></span><span class="c1">-- Example of a script on a bag that places Object into itself</span>
 <span class="kd">local</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">getObjectFromGUID</span><span class="p">(</span><span class="s2">&quot;AAA111&quot;</span><span class="p">)</span>
 <span class="n">self</span><span class="p">.</span><span class="n">putObject</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
