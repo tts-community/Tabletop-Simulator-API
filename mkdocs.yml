@@ -73,6 +73,7 @@ nav:
       - 'Music Player': musicplayer.md
       - 'Notes': notes.md
       - 'Player': player.md
+      - 'Player Color': player-color.md
       - 'Turns': turns.md
     - 'Game Object':
       - 'Object': object.md
@@ -88,7 +89,6 @@ nav:
       - 'TextTool': texttool.md
     - 'Scripting Component':
       - 'Color': color.md
-      - 'Player Color': player-color.md
       - 'JSON': json.md
       - 'Physics': physics.md
       - 'Time': time.md
