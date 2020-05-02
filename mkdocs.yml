@@ -38,7 +38,7 @@ markdown_extensions:
       permalink: "\u0020"
 
 repo_name: 'GitHub Source'
-repo_url: 'https://github.com/Berserk-Games/Tabletop-Simulator-API'
+repo_url: 'https://github.com/tts-community/api'
 
 
 extra:
@@ -52,46 +52,54 @@ extra:
     - type: 'youtube'
       link: 'https://www.youtube.com/user/berserkgames'
 
-pages:
-  - Getting Started:
-    - Introduction: index.md
-    - Overview: overview.md
-    - Atom: atom.md
-    - External Editor API: externaleditorapi.md
-    - Learning Lua: learninglua.md
-    - System Console: systemconsole.md
-    - Virtual Reality: vr.md
-    - Changelog: changelog.md
-  - Scripting API:
-    - Introduction: intro.md
-    - Types: types.md
-    - Event: event.md
-    - Base: base.md
-    - Object: object.md
-    - AssetBundle: assetbundle.md
-    - Clock: clock.md
-    - Component: component.md
-    - Counter: counter.md
-    - JSON: json.md
-    - Lighting: lighting.md
-    - Music Player: musicplayer.md
-    - Notes: notes.md
-    - Physics: physics.md
-    - Player: player.md
-    - Player Color: player-color.md
-    - RPGFigurine: rpgfigurine.md
-    - Spawnable Objects: spawnableobjects.md
-    - TextTool: texttool.md
-    - Time: time.md
-    - Turns: turns.md
-    - Vector: vector.md
-    - UI: ui.md
-    - Wait: wait.md
-    - Web Request: webrequest.md
-  - UI API:
-    - Introduction: ui/introUI.md
-    - Attributes: ui/attributes.md
-    - Basic Elements: ui/basicelements.md
-    - Input Elements: ui/inputelements.md
-    - Layout/Grouping: ui/layoutgrouping.md
-    - Defaults: ui/defaults.md
+nav:
+  - 'Getting Started':
+    - 'Introduction': index.md
+    - 'Overview': overview.md
+    - 'Atom': atom.md
+    - 'External Editor API': externaleditorapi.md
+    - 'Learning Lua': learninglua.md
+    - 'System Console': systemconsole.md
+    - 'Virtual Reality': vr.md
+    - 'Changelog': changelog.md
+  - 'Scripting API':
+    - 'Introduction': intro.md
+    - 'Types': types.md
+    - 'Base': base.md
+    - 'Event': event.md
+    - 'Game Component':
+      - 'Grid': grid.md
+      - 'Lighting': lighting.md
+      - 'Music Player': musicplayer.md
+      - 'Notes': notes.md
+      - 'Player': player.md
+      - 'Player Color': player-color.md
+      - 'Turns': turns.md
+    - 'Game Object':
+      - 'Object': object.md
+      - 'Object Component': component.md
+      - 'Built-in': built-in-object.md
+      - 'Custom Game Objects' : custom-game-objects.md
+      - 'AssetBundle': assetbundle.md
+      - 'Book': book.md
+      - 'Browser': browser.md
+      - 'Clock': clock.md
+      - 'Counter': counter.md
+      - 'RPGFigurine': rpgfigurine.md
+      - 'TextTool': texttool.md
+    - 'Scripting Component':
+      - 'Color': color.md
+      - 'JSON': json.md
+      - 'Physics': physics.md
+      - 'Time': time.md
+      - 'UI': ui.md
+      - 'Vector': vector.md
+      - 'Wait': wait.md
+      - 'Web Request': webrequest.md
+  - 'UI API':
+    - 'Introduction': ui/introUI.md
+    - 'Attributes': ui/attributes.md
+    - 'Basic Elements': ui/basicelements.md
+    - 'Input Elements': ui/inputelements.md
+    - 'Layout/Grouping': ui/layoutgrouping.md
+    - 'Defaults': ui/defaults.md
