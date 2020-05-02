@@ -2515,166 +2515,713 @@
                 
                   <h1>Built-in</h1>
                 
-                <p>Objects can be spawned by any script using the <a href="../base/#spawnobject">spawnObject()</a> function. These are the <code class="codehilite">type</code> Strings used to designate the type of Object to spawn.</p>
+                <p>This page has information on each type of non-custom object, including the <code class="codehilite">type</code> strings used to designate the type of Object to spawn using the <a href="../base/#spawnobject">spawnObject()</a> function.</p>
+<p>For Custom Objects, see <a href="../custom-game-objects/">Custom Game Objects</a>.</p>
+<p>Each item listed here is treated as a unique object type. (ie. A red checker tinted black will not stack on top of a regular black checker.)</p>
 <h2 id="boards">Boards<a class="headerlink" href="#boards" title="Permanent link"> </a></h2>
-<ul>
-<li>backgammon_board</li>
-<li>CardBot_Board</li>
-<li>Checker_Board</li>
-<li>Chess_Board</li>
-<li>Chinese_Checkers_Board</li>
-<li>Go_Board</li>
-<li>Pachisi_Board</li>
-<li>reversi_board</li>
-</ul>
+<p>All boards spawn locked by default.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="anchor" id="Backgammon_Board"></a>Backgammon_Board</td>
+<td>The fold-open board of Backgammon.</td>
+<td>Includes snap-points along each triangle.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="CardBot_Board"></a>CardBot_Board</td>
+<td>The main board and 4 player boards of CardBots, Build &amp; Destroy.</td>
+<td>Includes snap-points on each card and deck location. Not spawnable in the Objects-&gt;Components menu.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Checker_Board"></a>Checker_Board</td>
+<td>The 8x8 board of Checkers.</td>
+<td>Includes snap-points on each grid square.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chess_Board"></a>Chess_Board</td>
+<td>The 8x8 board of Chess.</td>
+<td>Includes snap-points on each grid square.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chinese_Checkers_Board"></a>Chinese_Checkers_Board</td>
+<td>The 6-pointed board of Sternhalma, or Chinese Checkers.</td>
+<td>Includes snap-points on each indent.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Go_Board"></a>Go_Board</td>
+<td>The 9-starred board of Go.</td>
+<td>Includes snap-points on each line intersection. Not spawnable in the Objects-&gt;Components menu.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Pachisi_Board"></a>Pachisi_Board</td>
+<td>A 6-player Pachisi board.</td>
+<td>Includes snap-points on each indent. Not spawnable in the Objects-&gt;Components menu.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Reversi_Board"></a>Reversi_Board</td>
+<td>The 8x8 board of Reversi.</td>
+<td>Includes snap-points on each grid square. Not spawnable in the Objects-&gt;Components menu.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="containers">Containers<a class="headerlink" href="#containers" title="Permanent link"> </a></h2>
-<ul>
-<li>Bag</li>
-<li>Bowl</li>
-<li>Cup</li>
-<li>go_game_bowl_black</li>
-<li>go_game_bowl_white</li>
-<li>Infinite_Bag</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="anchor" id="Bag"></a>Bag</td>
+<td>A pouch that objects can be stored in and taken from.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Bowl"></a>Bowl</td>
+<td>A wooden bowl that obects can be dropped in.</td>
+<td>The bowl does not have an inventory, objects merely rest within it visually.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Go_Game_Bowl_Black"></a>Go_Game_Bowl_Black</td>
+<td>A bowl that any number of <a href="#Go_Game_Piece_Black">Black Go Stones</a> can be taken from and dropped back into.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Go_Game_Bowl_White"></a>Go_Game_Bowl_White</td>
+<td>A bowl that any number of <a href="#Go_Game_Piece_White">White Go Stones</a> can be taken from and dropped back into.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Infinite_Bag"></a>Infinite_Bag</td>
+<td>A pouch that infinite copies of a single object can be taken from and dropped back into.</td>
+<td>An object must be put into the bag to become the source object.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="figurines">Figurines<a class="headerlink" href="#figurines" title="Permanent link"> </a></h2>
-<ul>
-<li>Figurine_Card_Bot</li>
-<li>Figurine_Kimi_Kat</li>
-<li>Figurine_Knil</li>
-<li>Figurine_Mara</li>
-<li>Figurine_Sir_Loin</li>
-<li>Figurine_Zeke</li>
-<li>Figurine_Zomblor</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="anchor" id="Figurine_Card_Bot"></a>Figurine_Card_Bot</td>
+<td>A rectagule-based figurine of a CardBot from CardBots, Build &amp; Destroy.</td>
+<td>Called "CardBot" in the in-game menu. Faces visually to the side.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Figurine_Kimi_Kat"></a>Figurine_Kimi_Kat</td>
+<td>A rectagule-based figurine of two sitting cats.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Figurine_Knil"></a>Figurine_Knil</td>
+<td>A baseless figurine of a sword-wielding knight in full-plate armor.</td>
+<td>Called "Knight of Knil" in the in-game menu.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Figurine_Mara"></a>Figurine_Mara</td>
+<td>A baseless figurine of a bearded man in slacks.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Figurine_Sir_Loin"></a>Figurine_Sir_Loin</td>
+<td>A rectagule-based figurine of a sword-wielding warrior with a shield on his back.</td>
+<td>Faces visually backwards.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Figurine_Zeke"></a>Figurine_Zeke</td>
+<td>A baseless figurine of a cloaked character wielding a sword.</td>
+<td>Called "Zeke Kodoku" in the in-game menu.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Figurine_Zomblor"></a>Figurine_Zomblor</td>
+<td>A baseless figurine of a zombified riot-officer with knives for hands, wearing a skirt.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="game-pieces">Game Pieces<a class="headerlink" href="#game-pieces" title="Permanent link"> </a></h2>
-<ul>
-<li>backgammon_piece_brown</li>
-<li>backgammon_piece_white</li>
-<li>BlockRectangle</li>
-<li>BlockSquare</li>
-<li>BlockTriangle</li>
-<li>Card</li>
-<li>Checker_black</li>
-<li>Checker_red</li>
-<li>Checker_white</li>
-<li>Chess_Bishop</li>
-<li>Chess_King</li>
-<li>Chess_Knight</li>
-<li>Chess_Pawn</li>
-<li>Chess_Queen</li>
-<li>Chess_Rook</li>
-<li>Chinese_Checkers_Piece</li>
-<li>Chip_10</li>
-<li>Chip_50</li>
-<li>Chip_100</li>
-<li>Chip_500</li>
-<li>Chip_1000</li>
-<li>Deck</li>
-<li>Die_4</li>
-<li>Die_6</li>
-<li>Die_6_Rounded</li>
-<li>Die_8</li>
-<li>Die_10</li>
-<li>Die_12</li>
-<li>Die_20</li>
-<li>Die_Piecepack</li>
-<li>Domino</li>
-<li>go_game_piece_black</li>
-<li>go_game_piece_white</li>
-<li>Mahjong_Coin</li>
-<li>Mahjong_Stick</li>
-<li>Mahjong_Tile</li>
-<li>Metal Ball</li>
-<li>PiecePack_Arms</li>
-<li>PiecePack_Crowns</li>
-<li>PiecePack_Moons</li>
-<li>PiecePack_Suns</li>
-<li>PlayerPawn</li>
-<li>Quarter</li>
-<li>reversi_chip</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="anchor" id="Backgammon_Piece_Brown"></a>Backgammon_Piece_Brown</td>
+<td>A brown Backgammon piece.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Backgammon_Piece_White"></a>Backgammon_Piece_White</td>
+<td>A white Backgammon piece.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="BlockRectangle"></a>BlockRectangle</td>
+<td>A blue rectangular prism.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="BlockSquare"></a>BlockSquare</td>
+<td>A red cube.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="BlockTriangle"></a>BlockTriangle</td>
+<td>A green triangular prism.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Card"></a>Card</td>
+<td>A card that is blank on both sides.</td>
+<td>It is the size of a playing card, but will not stack into a deck.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Checker_Black"></a>Checker_Black</td>
+<td>A black checker with a crown emblem on the top side.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Checker_Red"></a>Checker_Red</td>
+<td>A black checker with a crown emblem on the top side.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Checker_White"></a>Checker_White</td>
+<td>A black checker with a crown emblem on the top side.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chess_Bishop"></a>Chess_Bishop</td>
+<td>A chrome Chess bishop.</td>
+<td>Faces visually to the left.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chess_King"></a>Chess_King</td>
+<td>A chrome Chess King.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chess_Knight"></a>Chess_Knight</td>
+<td>A chrome Chess knight.</td>
+<td>Faces visually backward (a common chess practice).</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chess_Pawn"></a>Chess_Pawn</td>
+<td>A chrome Chess pawn.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chess_Queen"></a>Chess_Queen</td>
+<td>A chrome Chess queen.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chess_Rook"></a>Chess_Rook</td>
+<td>A chrome Chess rook.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chinese_Checkers_Piece"></a>Chinese_Checkers_Piece</td>
+<td>A marble for use in Sternhalma, or Chinese Checkers.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chip_10"></a>Chip_10</td>
+<td>A blue poker chip worth $10</td>
+<td>Faces visually to the left.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chip_50"></a>Chip_50</td>
+<td>A green poker chip worth $50</td>
+<td>Faces visually to the left.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chip_100"></a>Chip_100</td>
+<td>A red poker chip worth $100</td>
+<td>Faces visually to the left.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chip_500"></a>Chip_500</td>
+<td>A silver poker chip worth $500</td>
+<td>Faces visually to the left.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Chip_1000"></a>Chip_1000</td>
+<td>A gold poker chip worth $1000</td>
+<td>Faces visually to the left.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Deck"></a>Deck</td>
+<td>A deck of the 52 standard playing cards.</td>
+<td>Spawns face-up. Shuffles immediately when spawned.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Die_4"></a>Die_4</td>
+<td>A 4-sided die.</td>
+<td>Spawns with 2 facing toward positive Z.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Die_6"></a>Die_6</td>
+<td>A 6-sided die with dots.</td>
+<td>Spawns with 2 facing upwards.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Die_6_Rounded"></a>Die_6_Rounded</td>
+<td>A 6-sided die with dots and rounded corners.</td>
+<td>Spawns with 1 facing upwards.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Die_8"></a>Die_8</td>
+<td>An 8-sided die.</td>
+<td>Spawns with the edge between 6 and 7 facing upwards.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Die_10"></a>Die_10</td>
+<td>A 10-sided die.</td>
+<td>Spawns with the edge between 3 and 4 facing upwards.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Die_12"></a>Die_12</td>
+<td>A 12-sided die.</td>
+<td>Spawns with the corner between 7, 9 and 11 facing upwards.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Die_20"></a>Die_20</td>
+<td>A 20-sided die.</td>
+<td>Spawns with the edge between 1 and 17 facing upwards.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Die_Piecepack"></a>Die_Piecepack</td>
+<td>A wooden 6-sided die.</td>
+<td>Spawns with 2 facing upwards.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Domino"></a>Domino</td>
+<td>A blank domino.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Go_Game_Piece_Black"></a>Go_Game_Piece_Black</td>
+<td>A black Go stone.</td>
+<td>Spawned from a <a href="#Go_Game_Bowl_Black">black Go bowl</a>.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Go_Game_Piece_White"></a>Go_Game_Piece_White</td>
+<td>A white Go stone.</td>
+<td>Spawned from a <a href="#Go_Game_Bowl_White">white Go bowl</a>.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Mahjong_Coin"></a>Mahjong_Coin</td>
+<td>A coin used in Mahjong.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Mahjong_Stick"></a>Mahjong_Stick</td>
+<td>A stick used in Mahjong.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Mahjong_Tile"></a>Mahjong_Tile</td>
+<td>A tile used in Mahjong.</td>
+<td></td>
+</tr>
+<tr>
+<td>Metal Ball</td>
+<td>A marble.</td>
+<td>This type includes a space character and not an underline.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="PiecePack_Arms"></a>PiecePack_Arms</td>
+<td>A wooden coin with a blue fleur-de-lis on the underside.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="PiecePack_Crowns"></a>PiecePack_Crowns</td>
+<td>A wooden coin with a green crown on the underside.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="PiecePack_Moons"></a>PiecePack_Moons</td>
+<td>A wooden coin with a black moon on the underside.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="PiecePack_Suns"></a>PiecePack_Suns</td>
+<td>A wooden coin with a red sun on the underside.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="PlayerPawn"></a>PlayerPawn</td>
+<td>A small game piece representing a player.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Quarter"></a>Quarter</td>
+<td>An american quarter minted in 1942.</td>
+<td>Spawns tails-up, facing to the right.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Reversi_Chip"></a>Reversi_Chip</td>
+<td>A dual-colored Reversi chip.</td>
+<td>Spawns white-side up.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="rpg-figurines">RPG Figurines<a class="headerlink" href="#rpg-figurines" title="Permanent link"> </a></h2>
-<ul>
-<li>rpg_BARGHEST</li>
-<li>rpg_BASILISK</li>
-<li>rpg_BEAR</li>
-<li>rpg_BLACK_DRAGON</li>
-<li>rpg_CENTAUR</li>
-<li>rpg_CERBERUS</li>
-<li>rpg_CHIMERA</li>
-<li>rpg_CRASC</li>
-<li>rpg_CYCLOP</li>
-<li>rpg_DARKNESS_WARLORD</li>
-<li>rpg_DRAGONIDE</li>
-<li>rpg_EVIL_WATCHER</li>
-<li>rpg_GHOUL</li>
-<li>rpg_GIANT_VIPER</li>
-<li>rpg_GOBLIN</li>
-<li>rpg_GOLEM</li>
-<li>rpg_GRIFFON</li>
-<li>rpg_HYDRA</li>
-<li>rpg_KNIGHT</li>
-<li>rpg_KOBOLD</li>
-<li>rpg_LIZARD_WARRIOR</li>
-<li>rpg_MAGE</li>
-<li>rpg_MANTICORA</li>
-<li>rpg_MUMMY</li>
-<li>rpg_OGRE</li>
-<li>rpg_ORC</li>
-<li>rpg_RANGER</li>
-<li>rpg_RAT</li>
-<li>rpg_SKELETON_KNIGHT</li>
-<li>rpg_TEMPLATE</li>
-<li>rpg_THIEF</li>
-<li>rpg_TREE_ENT</li>
-<li>rpg_TROLL</li>
-<li>rpg_VAMPIRE</li>
-<li>rpg_WARRIOR</li>
-<li>rpg_WEREWOLF</li>
-<li>rpg_WYVERN</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="anchor" id="rpg_BARGHEST"></a>rpg_BARGHEST</td>
+<td>An animated figurine of a mythical barghest.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_BASILISK"></a>rpg_BASILISK</td>
+<td>An animated figurine of a mythical basilisk (a.k.a. cockatrice).</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_BEAR"></a>rpg_BEAR</td>
+<td>An animated figurine of a bear.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_BLACK_DRAGON"></a>rpg_BLACK_DRAGON</td>
+<td>An animated figurine of an eastern dragon.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_CENTAUR"></a>rpg_CENTAUR</td>
+<td>An animated figurine of an armoured centaur.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_CERBERUS"></a>rpg_CERBERUS</td>
+<td>An animated figurine of an infernal 3-headed dog.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_CHIMERA"></a>rpg_CHIMERA</td>
+<td>An animated figurine of a mythical chimera.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_CRASC"></a>rpg_CRASC</td>
+<td>An animated figurine of a one-eyed manta-like creature.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_CYCLOP"></a>rpg_CYCLOP</td>
+<td>An animated figurine of a club-wielding cyclops.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_DARKNESS_WARLORD"></a>rpg_DARKNESS_WARLORD</td>
+<td>An animated figurine of an armoured, morningstar-wielding orc.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_DRAGONIDE"></a>rpg_DRAGONIDE</td>
+<td>An animated figurine of an armored humanoid lizard.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_EVIL_WATCHER"></a>rpg_EVIL_WATCHER</td>
+<td>An animated figurine of a cycloptic scaled head with eye-stalks and bat-wings.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_GHOUL"></a>rpg_GHOUL</td>
+<td>An animated figurine of an undead humanoid</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_GIANT_VIPER"></a>rpg_GIANT_VIPER</td>
+<td>An animated figurine of a large snake.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_GOBLIN"></a>rpg_GOBLIN</td>
+<td>An animated figurine of a lightly-armored goblin with two knives.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_GOLEM"></a>rpg_GOLEM</td>
+<td>An animated figurine of a large earthen golem.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_GRIFFON"></a>rpg_GRIFFON</td>
+<td>An animated figurine of a mythical griffon.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_HYDRA"></a>rpg_HYDRA</td>
+<td>An animated figurine of a large 3-headed lizard.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_KNIGHT"></a>rpg_KNIGHT</td>
+<td>An animated figurine of a knight in full-plate armor wielding a sword and shield.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_KOBOLD"></a>rpg_KOBOLD</td>
+<td>An animated figurine of a small helmeted humanoid.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_LIZARD_WARRIOR"></a>rpg_LIZARD_WARRIOR</td>
+<td>An animated figurine of a sword-wielding lizard-like humanoid</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_MAGE"></a>rpg_MAGE</td>
+<td>An animated figurine of a staff-wielding mage.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_MANTICORA"></a>rpg_MANTICORA</td>
+<td>An animated figurine of a mythical manticore.</td>
+<td>This type is spelled with an A.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_MUMMY"></a>rpg_MUMMY</td>
+<td>An animated figurine of a living mummy.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_OGRE"></a>rpg_OGRE</td>
+<td>An animated figurine of a large boily humanoid.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_ORC"></a>rpg_ORC</td>
+<td>An animated figurine of an axe-wielding orc.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_RANGER"></a>rpg_RANGER</td>
+<td>An animated figurine of a bow-wielding ranger.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_RAT"></a>rpg_RAT</td>
+<td>An animated figurine of a giant rat.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_SKELETON_KNIGHT"></a>rpg_SKELETON_KNIGHT</td>
+<td>An animated figurine of an armored living skeleton.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_TEMPLATE"></a>rpg_TEMPLATE</td>
+<td>The base of an RPG figurine.</td>
+<td>It has the same animatable triggers as any other RPG Figurine, but no associated animations.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_THIEF"></a>rpg_THIEF</td>
+<td>An animated figurine of a cowled knife-wielding thief.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_TREE_ENT"></a>rpg_TREE_ENT</td>
+<td>An animated figurine of a large tree creature.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_TROLL"></a>rpg_TROLL</td>
+<td>An animated figurine of a large green humanoid.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_VAMPIRE"></a>rpg_VAMPIRE</td>
+<td>An animated figurine of a large wingless bat.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_WARRIOR"></a>rpg_WARRIOR</td>
+<td>An animated figurine of a stout beared axe-wielding warrior in scale mail.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_WEREWOLF"></a>rpg_WEREWOLF</td>
+<td>An animated figurine of a mythical werewolf.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="rpg_WYVERN"></a>rpg_WYVERN</td>
+<td>An animated figurine of a mythical wyvern.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="tilesets">Tilesets<a class="headerlink" href="#tilesets" title="Permanent link"> </a></h2>
-<ul>
-<li>Tileset_Barrel</li>
-<li>Tileset_Chair</li>
-<li>Tileset_Chest</li>
-<li>Tileset_Corner</li>
-<li>Tileset_Floor</li>
-<li>Tileset_Rock</li>
-<li>Tileset_Table</li>
-<li>Tileset_Tree</li>
-<li>Tileset_Wall</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="anchor" id="Tileset_Barrel"></a>Tileset_Barrel</td>
+<td>A small barrel for use in RPG Tilesets.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Tileset_Chair"></a>Tileset_Chair</td>
+<td>A small chair for use in RPG Tilesets.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Tileset_Chest"></a>Tileset_Chest</td>
+<td>A small chest for use in RPG Tilesets.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Tileset_Corner"></a>Tileset_Corner</td>
+<td>A floor tile with two walls for use in RPG Tilesets.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Tileset_Floor"></a>Tileset_Floor</td>
+<td>A floor tile for use in RPG Tilesets.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Tileset_Rock"></a>Tileset_Rock</td>
+<td>A small rock for use in RPG Tilesets.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Tileset_Table"></a>Tileset_Table</td>
+<td>A small table for use in RPG Tilesets.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Tileset_Tree"></a>Tileset_Tree</td>
+<td>A small tree for use in RPG Tilesets.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Tileset_Wall"></a>Tileset_Wall</td>
+<td>A floor tile with a wall for use in RPG Tilesets.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link"> </a></h2>
-<ul>
-<li>Calculator</li>
-<li>Counter</li>
-<li>Digital_Clock</li>
-<li>Notecard</li>
-<li>Tablet</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="anchor" id="Calculator"></a>Calculator</td>
+<td>A useable calulator.</td>
+<td>Faces visually backwards.</td>
+</tr>
+<tr>
+<td><a class="anchor" id="Counter"></a>Counter</td>
+<td>A useable digital counter.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Digital_Clock"></a>Digital_Clock</td>
+<td>A useable digital clock.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Notecard"></a>Notecard</td>
+<td>An editable notecard.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="Tablet"></a>Tablet</td>
+<td>A tablet that displays a webpage.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="triggers">Triggers<a class="headerlink" href="#triggers" title="Permanent link"> </a></h2>
-<ul>
-<li>ScriptingTrigger<ul>
-<li>A Scripting Zone, a zone used for scripting</li>
-</ul>
-</li>
-<li>FogOfWarTrigger<ul>
-<li>A <a href="https://kb.tabletopsimulator.com/game-tools/zone-tools/#hidden-zone">Hidden Zone</a></li>
-</ul>
-</li>
-<li>FogOfWar<ul>
-<li>A <a href="https://kb.tabletopsimulator.com/game-tools/zone-tools/#fog-of-war-zone">Fog of War Zone</a></li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="anchor" id="ScriptingTrigger"></a>ScriptingTrigger</td>
+<td>A Scripting Zone, a zone used for scripting.</td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="FogOfWarTrigger"></a>FogOfWarTrigger</td>
+<td>A <a href="https://kb.tabletopsimulator.com/game-tools/zone-tools/#hidden-zone">Hidden Zone</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="anchor" id="FogOfWar"></a>FogOfWar</td>
+<td>A <a href="https://kb.tabletopsimulator.com/game-tools/zone-tools/#fog-of-war-zone">Fog of War Zone</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="other">Other<a class="headerlink" href="#other" title="Permanent link"> </a></h2>
-<ul>
-<li>3DText<ul>
-<li>The text that the <a href="https://kb.tabletopsimulator.com/game-tools/text-tool/">Text Tool</a> spawns.</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="anchor" id="3DText"></a>3DText</td>
+<td>The text that the <a href="https://kb.tabletopsimulator.com/game-tools/text-tool/">Text Tool</a> spawns.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
