@@ -1,4 +1,5 @@
 site_name: Tabletop Simulator API
+site_url: https://nabbydude.github.io/Tabletop-Simulator-API
 theme:
   name: 'material'
   palette:
