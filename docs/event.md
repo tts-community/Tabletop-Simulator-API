@@ -77,7 +77,7 @@ onSearchStart([<span class="tag str"></span>](types.md)&nbsp;player_color) | Cal
 
 Called when an object attempts to enter a container. The object is prevented from entering unless "true" is returned.
 
-!!!info "filterObjectEnter(obj)"
+!!!info "filterObjectEnter(container, enter_object)"
 	* [<span class="tag obj"></span>](types.md)&nbsp;**container**: The container the Object is trying to enter.
 	* [<span class="tag obj"></span>](types.md)&nbsp;**enter_object**: The Object entering the container.
 
