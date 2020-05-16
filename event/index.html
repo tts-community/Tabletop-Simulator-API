@@ -905,6 +905,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#filterobjectentercontainer" title="filterObjectEnterContainer(...)" class="md-nav__link">
+    filterObjectEnterContainer(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#onchat" title="onChat(...)" class="md-nav__link">
     onChat(...)
   </a>
@@ -2572,6 +2579,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#filterobjectentercontainer" title="filterObjectEnterContainer(...)" class="md-nav__link">
+    filterObjectEnterContainer(...)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#onchat" title="onChat(...)" class="md-nav__link">
     onChat(...)
   </a>
@@ -3150,6 +3164,22 @@
 </table>
 <hr />
 <h2 id="function-details-global-object">Function Details (Global &amp; Object)<a class="headerlink" href="#function-details-global-object" title="Permanent link"> </a></h2>
+<h3 id="filterobjectentercontainer">filterObjectEnterContainer(...)<a class="headerlink" href="#filterobjectentercontainer" title="Permanent link"> </a></h3>
+<p>Called when an object attempts to enter a container. The object is prevented from entering unless "true" is returned.</p>
+<div class="admonition info">
+<p class="admonition-title">filterObjectEnter(obj)</p>
+<ul>
+<li><a href="../types/"><span class="tag obj"></span></a>&nbsp;<strong>container</strong>: The container the Object is trying to enter.</li>
+<li><a href="../types/"><span class="tag obj"></span></a>&nbsp;<strong>enter_object</strong>: The Object entering the container.</li>
+</ul>
+</div>
+<div class="codehilite"><pre><span></span><span class="kr">function</span> <span class="nf">filterObjectEnterContainer</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">enter_object</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">enter_object</span><span class="p">.</span><span class="n">getName</span><span class="p">())</span> <span class="c1">-- Print entering object&#39;s name</span>
+    <span class="kr">return</span> <span class="kc">true</span> <span class="c1">-- Allows object to enter.</span>
+<span class="kr">end</span>
+</pre></div>
+
+<hr />
 <h3 id="onchat">onChat(...)<a class="headerlink" href="#onchat" title="Permanent link"> </a></h3>
 <p>This function is called when a message is sent through the in-game chat. It does not trigger when global chat messages are sent. Using <code class="codehilite"><span class="kr">return</span> <span class="kc">false</span></code> inside of this function prevents the chat message which triggered it to be suppressed.</p>
 <div class="admonition info">
