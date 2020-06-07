@@ -46,7 +46,7 @@ Variable | Description | Type
 <a class="anchor" id="value"></a>value | The value of the object for summing up selected objects. Only works if the apropriate bits are set in `obj.value_flags` | [<span class="tag int"></span>](types.md)
 
 !!! bug
-    The `drag_selectable`, `value_flags` and `value` member variables do not persist when the object is reloaded (such as loading a save and entering/exiting containers).
+    The `value_flags` and `value` member variables do not persist when the object is reloaded (such as loading a save and entering/exiting containers).
 
 These member variables are classes of their own, and have their own member variables. Each one is for a special type of Object.
 
@@ -183,8 +183,8 @@ Function Name | Description | Return | &nbsp;
 <a class="anchor" id="addattachment"></a>addAttachment([<span class="tag obj"></span>](types.md)&nbsp;Object) | The Object supplied as param is destroyed and becomes a dummy Object child. | [<span class="ret boo"></span>](types.md)
 <a class="anchor" id="removeattachment"></a>removeAttachment([<span class="tag int"></span>](types.md)&nbsp;index) | Removes a child with the given index. Use [getAttachments()](#getattachments) to find out the index property. | [<span class="ret obj"></span>](types.md)
 <a class="anchor" id="removeattachments"></a>removeAttachments() | Detaches the children of this Object. Returns a table of object references | [<span class="ret tab"></span>](types.md)
-<a class="anchor" id="destroyattachment"></a>destroyAttachment([<span class="tag int"></span>](types.md)&nbsp;index) | Destroys an attachment with the given index. | [<span class="ret bool"></span>](types.md)
-<a class="anchor" id="destroyattachments"></a>destroyAttachments() | Destroys all attachments. | [<span class="ret bool"></span>](types.md)
+<a class="anchor" id="destroyattachment"></a>destroyAttachment([<span class="tag int"></span>](types.md)&nbsp;index) | Destroys an attachment with the given index. | [<span class="ret boo"></span>](types.md)
+<a class="anchor" id="destroyattachments"></a>destroyAttachments() | Destroys all attachments. | [<span class="ret boo"></span>](types.md)
 <a class="anchor" id="addtoplayerselection"></a>addToPlayerSelection([<span class="tag str"></span>](types.md)&nbsp;player_color) | Adds object to player's selection. | [<span class="ret boo"></span>](types.md)
 <a class="anchor" id="removefromlayerselection"></a>removeFromPlayerSelection([<span class="tag str"></span>](types.md)&nbsp;player_color) | Removes object from player's selection. | [<span class="ret boo"></span>](types.md)
 <a class="anchor" id="flip"></a>flip() | Flips Object over. | [<span class="ret boo"></span>](types.md) |
@@ -259,6 +259,10 @@ setSnapPoints([<span class="tag tab"></span>](types.md)&nbsp;parameters) | Spawn
 <a class="anchor" id="settable"></a>setTable([<span class="tag str"></span>](types.md)&nbsp;func_name, [<span class="tag tab"></span>](types.md)&nbsp;data) | Creates/updates a variable in another entity's script. Only used for tables. | [<span class="ret boo"></span>](types.md) |
 <a class="anchor" id="setvar"></a>setVar([<span class="tag str"></span>](types.md)&nbsp;func_name, [<span class="tag var"></span>](types.md)&nbsp;data) | Creates/updates a variable in another entity's script. Cannot set a table. | [<span class="ret boo"></span>](types.md) |
 setVectorLines([<span class="tag tab"></span>](types.md)&nbsp;parameters) | Spawns Vector Lines from a list of parameters on this entity. | [<span class="ret boo"></span>](types.md) | [<span class="i"></span>](#setvectorlines)
+<<<<<<< HEAD
+=======
+
+>>>>>>> official/master
 
 ---
 
@@ -842,7 +846,7 @@ Removing an index instantly causes all other higher indexes to shift down 1.
 
 ####getCustomObject()
 
-[<span class="ret tab"></span>](types.md)&nbsp;Returns a Table with the Custom Object information of a Custom Object. See the [Spawnable Objects](spawnableobjects.md) page for the kind of information returned.
+[<span class="ret tab"></span>](types.md)&nbsp;Returns a Table with the Custom Object information of a Custom Object. See the [Custom Game Objects](custom-game-objects.md) page for the kind of information returned.
 
 ``` Lua
 -- Example returned Table for a custom token
@@ -1118,7 +1122,7 @@ Tablet | Returns String of the current URL.
 [<span class="ret boo"></span>](types.md)&nbsp;Sets a custom Object's properties. It can be used after [spawnObject](base.md#spawnobject) or on an already existing custom Object. If used on an already existing custom Object, you must use [reload](#reload) on the object after setCustomObject for the changes to be displayed.
 
 !!!info "setCustomObject(parameters)"
-	The Table of parameters varies, depending on which type of custom Object it is. See the [Spawnable Object](spawnableobjects.md) page for the parameters needed.
+	The Table of parameters varies, depending on which type of custom Object it is. See the [Custom Game Objects](custom-game-objects.md) page for the parameters needed.
 
 ``` Lua
 -- Example of a custom token
@@ -1355,7 +1359,7 @@ self.jointTo(obj, {
 	["break_torgue"] = 1000.0,
 	["motor_force"]  = 100.0,
 	["motor_velocity"] = 10.0,
-	["motor_freeSpin"] = true
+	["motor_free_spin"] = true
 })
 ```
 
