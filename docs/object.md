@@ -259,10 +259,7 @@ setSnapPoints([<span class="tag tab"></span>](types.md)&nbsp;parameters) | Spawn
 <a class="anchor" id="settable"></a>setTable([<span class="tag str"></span>](types.md)&nbsp;func_name, [<span class="tag tab"></span>](types.md)&nbsp;data) | Creates/updates a variable in another entity's script. Only used for tables. | [<span class="ret boo"></span>](types.md) |
 <a class="anchor" id="setvar"></a>setVar([<span class="tag str"></span>](types.md)&nbsp;func_name, [<span class="tag var"></span>](types.md)&nbsp;data) | Creates/updates a variable in another entity's script. Cannot set a table. | [<span class="ret boo"></span>](types.md) |
 setVectorLines([<span class="tag tab"></span>](types.md)&nbsp;parameters) | Spawns Vector Lines from a list of parameters on this entity. | [<span class="ret boo"></span>](types.md) | [<span class="i"></span>](#setvectorlines)
-<<<<<<< HEAD
-=======
 
->>>>>>> official/master
 
 ---
 

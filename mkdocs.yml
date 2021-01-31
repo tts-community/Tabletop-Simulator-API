@@ -39,7 +39,7 @@ markdown_extensions:
       permalink: "\u0020"
 
 repo_name: 'GitHub Source'
-repo_url: 'https://github.com/tts-community/api'
+repo_url: 'https://github.com/Berserk-Games/Tabletop-Simulator-API'
 
 
 extra:
